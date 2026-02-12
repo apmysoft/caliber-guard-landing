@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://apmysoft.github.io',
-  base: '/caliber-guard-landing',
+  site: 'https://caliberguard.com',
   vite: {
     plugins: [tailwindcss()]
   }
