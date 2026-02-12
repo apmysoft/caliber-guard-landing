@@ -1,0 +1,76 @@
+---
+---
+
+<section id="hero" class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 lg:pt-32 lg:pb-20 overflow-hidden">
+  <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <!-- Left Column: Copy -->
+      <div class="order-2 lg:order-1 text-center lg:text-left space-y-8 animate-fade-in-up">
+        <div class="space-y-4">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-text-main leading-[1.1]">
+            Lleva el control total de tu <span class="text-primary">colección de relojes</span>.
+          </h1>
+          <p class="text-lg lg:text-xl text-text-muted max-w-2xl mx-auto lg:mx-0 text-balance">
+            Uso real por reloj (puestas/día), mantenimiento y métricas económicas, con tus datos guardados localmente.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a
+            href="#"
+            class="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primary-hover text-black font-bold rounded-full transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.2)] flex items-center justify-center gap-2 js-ga-android-link"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M17.523 15.3414C17.523 16.7362 16.3686 17.8686 14.9431 17.8686C13.5176 17.8686 12.3631 16.7362 12.3631 15.3414C12.3631 13.9466 13.5176 12.8142 14.9431 12.8142C16.3686 12.8142 17.523 13.9466 17.523 15.3414ZM7.92029 15.3414C7.92029 16.7362 6.76582 17.8686 5.34033 17.8686C3.91484 17.8686 2.76038 16.7362 2.76038 15.3414C2.76038 13.9466 3.91484 12.8142 5.34033 12.8142C6.76582 12.8142 7.92029 13.9466 7.92029 15.3414ZM18.4419 6.27393L20.2443 3.15372C20.3347 2.99757 20.2816 2.79895 20.1254 2.70868C19.9692 2.6184 19.7706 2.67151 19.6804 2.82767L17.8488 5.99616C15.8286 5.0716 13.5935 4.5459 11.218 4.5459C8.84251 4.5459 6.60738 5.0716 4.58721 5.99616L2.75564 2.82767C2.66536 2.67151 2.46675 2.6184 2.3106 2.70868C2.15444 2.79895 2.10133 2.99757 2.19161 3.15372L3.99401 6.27393C1.72591 7.55018 0.174751 9.87878 0 12.5516H22.436C22.2612 9.87878 20.7101 7.55018 18.4419 6.27393Z"/></svg>
+            Probar gratis en Android
+          </a>
+          <button
+            class="w-full sm:w-auto px-8 py-4 bg-transparent border border-border hover:border-text-main text-text-main hover:text-white font-medium rounded-full transition-all flex items-center justify-center gap-2 js-open-ios-waitlist"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg>
+            Quiero la versión iOS
+          </button>
+        </div>
+
+        <p class="text-sm text-text-muted font-medium">
+          Gratis con anuncios. Premium para analíticas avanzadas y exportación.
+        </p>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in relative group">
+        <!-- Glow effect -->
+        <div class="absolute inset-0 bg-primary/10 rounded-full blur-[100px] group-hover:bg-primary/20 transition-all duration-700"></div>
+        
+        <div class="relative z-10 w-full max-w-[320px] lg:max-w-[400px]">
+          <div class="bg-surface rounded-[2.5rem] border-8 border-border shadow-2xl overflow-hidden relative">
+             <img 
+               src="/images/screens/inventory-list.jpg" 
+               alt="Caliber Guard App Screen" 
+               class="w-full h-auto object-contain"
+               loading="eager"
+             />
+             <!-- Overlay gradient for premium feel -->
+             <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+     from { opacity: 0; }
+     to { opacity: 1; }
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+  .animate-fade-in {
+    animation: fade-in 1.2s ease-out forwards;
+  }
+</style>

@@ -1,0 +1,66 @@
+---
+const features = [
+  {
+    title: "Control de uso",
+    text: "Registra cada puesta y descubre qué relojes estás usando de verdad. Rankings, porcentajes y rotación en segundos.",
+    note: "Free: Básico | Premium: más métricas y filtros",
+    image: "/images/screens/usage-log.jpg", 
+    align: "right"
+  },
+  {
+    title: "Mantenimiento y Cronometría",
+    text: "Planifica revisiones, guarda notas y controla la marcha. Tu historial, siempre a mano.",
+    note: "Free: básico | Premium: recordatorios y seguimiento avanzado",
+    image: "/images/screens/chronometry.jpg",
+    align: "left"
+  },
+  {
+    title: "Analítica económica",
+    text: "Entiende tu pasión. Dashboard financiero con ROI, gráficos de uso y generación de fichas tácticas para compartir en redes.",
+    note: "Premium: Exportación + analíticas avanzadas",
+    image: "/images/screens/statistics.jpg", // Using statistics as representative
+    align: "right"
+  }
+];
+---
+
+<section class="py-20 lg:py-32 overflow-hidden">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="text-center mb-20">
+      <h2 class="text-3xl lg:text-5xl font-bold mb-4">Qué puedes hacer</h2>
+      <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+    </div>
+
+    <div class="space-y-24 lg:space-y-32">
+      {features.map((feature, index) => (
+        <div class={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${feature.align === 'left' ? 'lg:flex-row-reverse' : ''}`}>
+          
+          <div class="flex-1 space-y-6">
+            <h3 class="text-3xl lg:text-4xl font-bold">{feature.title}</h3>
+            <p class="text-lg text-text-muted leading-relaxed text-balance">
+              {feature.text}
+            </p>
+            <div class="inline-flex items-center px-3 py-1 bg-surface border border-border rounded-full text-xs font-mono text-primary">
+              {feature.note}
+            </div>
+          </div>
+
+          <div class="flex-1 w-full flex justify-center perspective-1000 group">
+             <!-- Card container with subtle 3D tilt effect on hover could go here, keeping it simple for now -->
+             <div class="relative w-full max-w-[300px] bg-surface rounded-[2rem] border-4 border-border overflow-hidden transform transition-transform duration-500 hover:scale-[1.02]">
+                <img 
+                  src={feature.image} 
+                  alt={feature.title}
+                  class="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+                <!-- Reflection/Glare -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
+             </div>
+          </div>
+          
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

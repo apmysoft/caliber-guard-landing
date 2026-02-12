@@ -1,0 +1,46 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-surface py-12 border-t border-border text-text-muted text-sm">
+  <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    <div class="flex flex-col gap-2 items-center md:items-start">
+      <div class="flex items-center gap-2">
+        <img src="/app_icon.png" alt="Caliber Guard Logo" class="w-6 h-6 object-contain" />
+        <span class="text-text-main font-bold text-lg tracking-tight">Caliber Guard</span>
+      </div>
+      <span>© {year} Caliber Guard. Todos los derechos reservados.</span>
+    </div>
+
+    <nav class="flex gap-8">
+      <a href="/privacy" class="hover:text-text-main transition-colors">Política de privacidad</a>
+      <a href="mailto:contacto@caliberguard.app" class="hover:text-text-main transition-colors">Contacto</a>
+    </nav>
+    
+    <!-- Optional Socials -->
+    <!-- Socials & Actions -->
+    <div class="flex gap-4 items-center">
+       <!-- Instagram -->
+       <a href="https://www.instagram.com/caliberguard/" class="hover:text-text-main transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+       </a>
+       
+       <!-- YouTube -->
+       <a href="https://www.youtube.com/@CaliberGuard" class="hover:text-text-main transition-colors" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+       </a>
+
+       <!-- Newsletter -->
+       <a href="mailto:newsletter@caliberguard.app" class="hover:text-text-main transition-colors" aria-label="Suscribirse a newsletter">
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+       </a>
+
+       <!-- iOS Waitlist -->
+       <button class="hover:text-text-main transition-colors js-open-ios-waitlist" aria-label="Solicitar versión iOS">
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/><path d="M10 2c1 .5 2 2 2 5"/></svg>
+       </button>
+    </div>
+
+  </div>
+</footer>

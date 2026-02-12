@@ -1,0 +1,195 @@
+---
+import changelogData from '../content/changelog.json';
+---
+
+<section class="py-20 lg:py-32">
+  <div class="container mx-auto px-4 max-w-6xl">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-2">Roadmap y actualizaciones</h2>
+      <p class="text-text-muted">Desarrollo continuo, mejoras trimestrales.</p>
+    </div>
+
+    <!-- Comparative Grid -->
+    <div class="grid md:grid-cols-3 gap-6 mb-20 items-start">
+      
+      <!-- 1. FREE (Green) -->
+      <div class="rounded-2xl bg-surface border border-border p-6 border-t-4 border-t-green-500 shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-white/5">
+          <div class="w-2.5 h-2.5 rounded-full bg-green-500 shadow-[0_0_10px_rgba(76,175,80,0.4)]"></div>
+          <h3 class="text-lg font-bold uppercase tracking-wide text-green-500">Plan Básico</h3>
+        </div>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-green-500">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Inventario Ilimitado:</strong>
+               Alta, edición y fotos.
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-green-500">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Cronometría Básica:</strong>
+               Mide la precisión.
+             </div>
+          </li>
+           <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-green-500">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Wishlist:</strong>
+               Objetivos y enlaces.
+             </div>
+          </li>
+           <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-green-500">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Backups:</strong>
+               Seguridad local.
+             </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 2. PREMIUM (Gold) -->
+      <div class="rounded-2xl bg-[#22201a] border border-primary/20 p-6 border-t-4 border-t-primary shadow-xl hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+        <!-- Glow effect -->
+        <div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+            <div class="w-32 h-32 bg-primary blur-[60px] rounded-full"></div>
+        </div>
+        
+        <div class="relative z-10 flex items-center gap-3 mb-6 pb-4 border-b border-primary/10">
+          <div class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
+          <h3 class="text-lg font-bold uppercase tracking-wide text-primary">Plan Premium 💎</h3>
+        </div>
+        <ul class="space-y-5 relative z-10">
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-primary">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Funcionalidades versión gratuita</strong>
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-primary">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">100% Sin Publicidad</strong>
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-primary">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Dashboard Financiero:</strong>
+               Gráficos ROI y Balance.
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-primary">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Coste por Puesta:</strong>
+               Rentabilidad real.
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-primary">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Mantenimiento:</strong>
+               Bitácora, costes y alertas.
+             </div>
+          </li>
+           <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-primary">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Exportación Avanzada:</strong>
+               CSV/Excel para seguros.
+             </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 3. ROADMAP (Cyan/Future) -->
+      <div class="rounded-2xl bg-surface border-dashed border border-cyan-400/30 p-6 border-t-4 border-t-cyan-400 shadow-xl hover:-translate-y-1 transition-transform duration-300">
+        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-white/5">
+          <div class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.6)]"></div>
+          <h3 class="text-lg font-bold uppercase tracking-wide text-cyan-400">Futuro (v2.0) 🚀</h3>
+        </div>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-cyan-400">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">IA Scanner:</strong>
+               Reconocimiento automático de relojes.
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-cyan-400">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Gestión Documental:</strong>
+               Adjuntar PDF facturas y garantías.
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-cyan-400">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Amazon API Real:</strong>
+               Precios y fotos automáticos.
+             </div>
+          </li>
+          <li class="flex items-start gap-3">
+             <div class="w-5 h-5 flex items-center justify-center shrink-0 text-cyan-400">
+               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+             </div>
+             <div class="text-sm text-text-muted">
+               <strong class="text-white block mb-0.5">Internacionalización:</strong>
+               Multi-idioma y Multi-divisa.
+             </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!-- Changelog -->
+    <div class="max-w-3xl mx-auto border-t border-border pt-16">
+      <h3 class="text-xl font-bold mb-8 text-text-muted uppercase tracking-widest text-sm">Registro de cambios</h3>
+      <div class="space-y-8 relative before:absolute before:left-[7px] before:top-10 before:bottom-0 before:w-[2px] before:bg-border">
+        {changelogData.map((log) => (
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-border border-2 border-text-muted"></div>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-1">
+              <span class="text-lg font-bold text-text-main">{log.version}</span>
+              <span class="text-sm font-mono text-text-muted">{log.date}</span>
+            </div>
+            <p class="text-text-muted text-sm">{log.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>

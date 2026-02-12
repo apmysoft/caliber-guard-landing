@@ -1,0 +1,12 @@
+[
+    {
+        "version": "v1.0",
+        "date": "Feb 2026",
+        "description": "Fase beta cerrada. Funcionalidades: Añadir relojes, uso, wishlist, analíticas y exportación de datos."
+    },
+    {
+        "version": "v1.1",
+        "date": "(Próximamente)",
+        "description": "Lanzamiento de la app en Google Play para todo el público."
+    }
+]
