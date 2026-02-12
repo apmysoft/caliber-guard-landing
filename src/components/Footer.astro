@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
     
     <div class="flex flex-col gap-2 items-center md:items-start">
       <div class="flex items-center gap-2">
-        <img src="/app_icon.png" alt="Caliber Guard Logo" class="w-6 h-6 object-contain" />
+        <img src={`${import.meta.env.BASE_URL}/app_icon.png`} alt="Caliber Guard Logo" class="w-6 h-6 object-contain" />
         <span class="text-text-main font-bold text-lg tracking-tight">Caliber Guard</span>
       </div>
       <span>© {year} Caliber Guard. Todos los derechos reservados.</span>
