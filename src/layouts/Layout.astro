@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import CookieConsent from '../components/CookieConsent.astro'; // Import component
 import '@fontsource/inter';
 import '@fontsource/roboto-mono';
 
@@ -20,18 +21,26 @@ const GA_ID = 'G-QCZXVWE90J';
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-    
-    <!-- GA4 -->
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', GA_ID);
+
+    <!-- GA4 Check & Inject -->
+    <script is:inline define:vars={{ GA_ID }}>
+      const userConsent = localStorage.getItem('cookie_consent');
+      if (userConsent === 'granted') {
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+          document.head.appendChild(script);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', GA_ID);
+      }
     </script>
 	</head>
 	<body class="antialiased selection:bg-primary selection:text-black">
 		<slot />
+    <CookieConsent />
     
     <script>
       // Global Analytics Event Listeners

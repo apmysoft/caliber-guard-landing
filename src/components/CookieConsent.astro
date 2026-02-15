@@ -1,0 +1,64 @@
+---
+---
+
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-neutral-900 border-t border-yellow-500/20 p-4 transform translate-y-full transition-transform duration-300 z-50 shadow-2xl" style="display: none;">
+  <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="text-neutral-300 text-sm flex-1">
+      <p>
+        Utilizamos cookies propias y de terceros (Google Analytics) para medir la audiencia y mejorar tu experiencia. 
+        Puedes obtener más información en nuestra <a href="/privacy" class="text-yellow-400 hover:underline">Política de Privacidad</a>.
+      </p>
+    </div>
+    <div class="flex gap-3 shrink-0">
+      <button id="cookie-reject" class="px-4 py-2 text-sm font-medium text-neutral-400 hover:text-white transition-colors">
+        Rechazar
+      </button>
+      <button id="cookie-accept" class="px-6 py-2 text-sm font-bold bg-yellow-500 text-black rounded hover:bg-yellow-400 transition-colors">
+        Aceptar
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+
+  // Check local storage
+  const consent = localStorage.getItem('cookie_consent');
+
+  // Show banner if no consent stored
+  if (!consent) {
+    if (banner) {
+        banner.style.display = 'block';
+        // Small delay for animation
+        setTimeout(() => {
+            banner.classList.remove('translate-y-full');
+        }, 100);
+    }
+  }
+
+  // Handle Accept
+  acceptBtn?.addEventListener('click', () => {
+    localStorage.setItem('cookie_consent', 'granted');
+    hideBanner();
+    // Reload page to activate GA scripts (managed in Layout)
+    window.location.reload();
+  });
+
+  // Handle Reject
+  rejectBtn?.addEventListener('click', () => {
+    localStorage.setItem('cookie_consent', 'denied');
+    hideBanner();
+  });
+
+  function hideBanner() {
+    if (banner) {
+        banner.classList.add('translate-y-full');
+        setTimeout(() => {
+            banner.style.display = 'none';
+        }, 300);
+    }
+  }
+</script>
