@@ -32,5 +32,24 @@ const GA_ID = import.meta.env.GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
 	</head>
 	<body class="antialiased selection:bg-primary selection:text-black">
 		<slot />
-	</body>
+    
+    <script>
+      // Global Analytics Event Listeners
+      document.addEventListener('DOMContentLoaded', () => {
+        // Track Android Download Clicks
+        const androidButtons = document.querySelectorAll('.js-ga-android-link');
+        androidButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+             // @ts-ignore
+            if (typeof gtag !== 'undefined') {
+               // @ts-ignore
+              gtag('event', 'click_download_android', {
+                'event_category': 'engagement',
+                'event_label': 'hero_android_download'
+              });
+            }
+          });
+        });
+      });
+    </script>
 </html>
