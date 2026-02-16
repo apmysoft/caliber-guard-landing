@@ -1,4 +1,8 @@
 ---
+import { Image } from 'astro:assets';
+import relojesMenos500Img from '../assets/blog/mejores-relojes-por-menos-de-500-euros.png';
+import ofertasAmazonImg from '../assets/blog/ofertas-relojes-amazon.jpg';
+import cuarzoVsAutoImg from '../assets/blog/cuarzo-vs-automatico.png';
 ---
 <section class="py-20 lg:py-32 bg-surface">
   <div class="container mx-auto px-4 max-w-6xl">
@@ -22,11 +26,12 @@
     <div class="grid md:grid-cols-3 gap-8">
       {/* Article Card 1 */}
       <a href="https://completatuestilo.com/mejores-relojes-por-menos-de-500-euros/" target="_blank" rel="noopener noreferrer" class="group cursor-pointer block">
-        <div class="bg-background aspect-video rounded-2xl overflow-hidden mb-4 relative">
-          <img 
-            src="/images/blog/mejores-relojes-por-menos-de-500-euros.png" 
+        <div class="bg-background aspect-video rounded-2xl overflow-hidden mb-4 relative px-[2px] py-[100px]">
+          <Image 
+            src={relojesMenos500Img} 
             alt="Mejores relojes por menos de 500 euros"
             class="w-full h-full object-cover transform group-hover:scale-105 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+            width={600}
           />
         </div>
         <span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Guías de Compra</span>
@@ -35,11 +40,12 @@
 
       {/* Article Card 2 */}
       <a href="https://completatuestilo.com/ofertas-relojes-amazon/" target="_blank" rel="noopener noreferrer" class="group cursor-pointer block">
-        <div class="bg-background aspect-video rounded-2xl overflow-hidden mb-4 relative">
-            <img 
-            src="/images/blog/ofertas-relojes-amazon.jpg" 
+        <div class="bg-background aspect-video rounded-2xl overflow-hidden mb-4 relative px-[2px] py-[100px]">
+            <Image 
+            src={ofertasAmazonImg} 
             alt="Ofertas de relojes en Amazon"
             class="w-full h-full object-cover transform group-hover:scale-105 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+            width={600}
           />
         </div>
         <span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Ofertas</span>
@@ -48,11 +54,12 @@
 
       {/* Article Card 3 */}
       <a href="https://completatuestilo.com/cuarzo-vs-automatico/" target="_blank" rel="noopener noreferrer" class="group cursor-pointer block">
-        <div class="bg-background aspect-video rounded-2xl overflow-hidden mb-4 relative">
-            <img 
-            src="/images/blog/cuarzo-vs-automatico.png" 
+        <div class="bg-background aspect-video rounded-2xl overflow-hidden mb-4 relative px-[2px] py-[100px]">
+            <Image 
+            src={cuarzoVsAutoImg} 
             alt="Cuarzo vs Automático"
             class="w-full h-full object-cover transform group-hover:scale-105 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+            width={600}
           />
         </div>
         <span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Tecnología</span>

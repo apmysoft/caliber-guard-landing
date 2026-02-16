@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import collectionAnonImg from '../assets/screens/collection-anon.jpg';
 ---
 <section class="py-20 lg:py-32 bg-surface border-y border-border">
   <div class="container mx-auto px-4 max-w-3xl text-center">
@@ -18,10 +20,11 @@
 
     <!-- Optional Visual -->
     <div class="mt-12 opacity-50 hover:opacity-100 transition-opacity duration-700">
-       <img 
-         src="/images/screens/collection-anon.jpg" 
+       <Image 
+         src={collectionAnonImg} 
          alt="Mi colección personal anonimizada" 
          class="mx-auto rounded-xl grayscale hover:grayscale-0 transition-all border border-border h-auto max-h-[400px] w-auto max-w-full object-contain"
+         width={600}
        />
     </div>
   </div>

@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import settingsPrivacyImg from '../assets/screens/settings-privacy.jpg';
 ---
 <section class="py-20 lg:py-32 bg-background">
   <div class="container mx-auto px-4 max-w-4xl">
@@ -17,11 +19,11 @@
 
       <div class="flex-1 w-full max-w-sm flex flex-col items-center gap-6">
         <div class="relative w-full max-w-[320px] bg-surface rounded-[2rem] border-4 border-border overflow-hidden shadow-2xl">
-          <img 
-            src="/images/screens/settings-privacy.jpg" 
+          <Image 
+            src={settingsPrivacyImg} 
             alt="Pantalla de ajustes de privacidad"
             class="w-full h-auto object-contain"
-            loading="lazy"
+            width={320}
           />
            <!-- Reflection/Glare (Optional) -->
            <div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
