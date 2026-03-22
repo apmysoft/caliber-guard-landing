@@ -5,8 +5,13 @@
         "description": "Fase beta cerrada. Funcionalidades: Añadir relojes, uso, wishlist, analíticas y exportación de datos."
     },
     {
-        "version": "v1.1",
-        "date": "(Próximamente)",
-        "description": "Lanzamiento de la app en Google Play para todo el público."
+        "version": "v1.1.2",
+        "date": "Mar 2026",
+        "description": "Lanzamiento de la app en Google Play para todo el público. Mejoras en el rendimiento y corrección de errores. Rediseño de la pestaña de uso."
+    },
+    {
+        "version": "v1.2",
+        "date": "Abril 2026",
+        "description": "Actualización de la base de datos de marcas de relojes. Mejoras en la estabilidad de la app."
     }
 ]
