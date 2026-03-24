@@ -11,7 +11,12 @@
     },
     {
         "version": "v1.2",
-        "date": "Abril 2026",
-        "description": "Actualización de la base de datos de marcas de relojes. Mejoras en la estabilidad de la app."
+        "date": "Mar 2026",
+        "description": "Añadidas más de 200 marcas de relojes a la base de datos."
+    },
+    {
+        "version": "v1.3",
+        "date": "(Próximamente)",
+        "description": "Mejoras en la estabilidad de la app."
     }
 ]
