@@ -16,12 +16,17 @@
     },
     {
         "version": "v1.2.1",
-        "date": "29 Mar 2026",
-        "description": "Importación de relojes mediante CSV. Enriquecimiento de datos de relojes existentes."
+        "date": "28 Mar 2026",
+        "description": "Importación de tu colección previa de relojes mediante CSV."
+    },
+    {
+        "version": "v1.2.2",
+        "date": "1 Abr 2026",
+        "description": "Informes de uso por periodos y exportación de datos. Mejoras en el rendimiento y corrección de errores."
     },
     {
         "version": "v1.3",
         "date": "(Próximamente)",
-        "description": "Mejoras en la estabilidad de la app."
+        "description": "Rediseño de la función de Cronometría."
     }
 ]
