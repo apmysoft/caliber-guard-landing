@@ -25,6 +25,11 @@
         "description": "Informes de uso por periodos y exportación de datos. Mejoras en el rendimiento y corrección de errores."
     },
     {
+        "version": "v1.2.5",
+        "date": "10 May 2026",
+        "description": "Mejora herramienta de fotografía, centralización de datos del reloj, modo privacidad económica, corrección de bugs en menú de puestas y backups"
+    },
+    {
         "version": "v1.3",
         "date": "(Próximamente)",
         "description": "Rediseño de la función de Cronometría."
