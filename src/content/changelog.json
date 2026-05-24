@@ -30,6 +30,11 @@
         "description": "Mejora herramienta de fotografía, centralización de datos del reloj, modo privacidad económica, corrección de bugs en menú de puestas y backups"
     },
     {
+        "version": "v1.2.6",
+        "date": "24 May 2026",
+        "description": "Mejora de rendimiento de la app en el arranque en frío, corrección de bugs. Nuevos gráficos en la sección de estadísticas de uso."
+    },
+    {
         "version": "v1.3",
         "date": "(Próximamente)",
         "description": "Rediseño de la función de Cronometría."
