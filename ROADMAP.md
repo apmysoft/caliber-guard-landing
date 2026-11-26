@@ -18,8 +18,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Añadida la 1.3 (prueba de 24 h con anuncios, copia mensual gratuita y copias más fiables); el rediseño de la cronometría pasa a la 1.4.
 - [ ] R-5 Actualizar las tarjetas de planes con las novedades de la 1.3
   El plan básico aún dice solo «Backups: seguridad local»; falta contar la copia mensual con fotos y la prueba de 24 h de la analítica y el buscador viendo anuncios.
-- [ ] R-6 Integrar hilo HdR
-  Enlazar desde la landing el hilo de Hablemos de Relojes donde se cuenta el desarrollo de la app, para que los visitantes vean el proyecto en marcha y opinen.
+- [x] R-6 Integrar hilo HdR
+  Enlaces al hilo de Hablemos de Relojes en la historia del creador, junto al registro de cambios y en el pie, con medición de clics por posición.
 
 ## SEO y conversión
 
@@ -45,6 +45,10 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Dar al botón de rechazar la misma prominencia que al de aceptar y permitir cambiar la elección más tarde, como pide la AEPD.
 - [ ] R-17 Contenido propio: páginas por función y blog
   Crear páginas propias para las funciones clave y un blog en el dominio, en lugar de enviar todo el tráfico de artículos a otra web.
+- [x] R-18 Enlace a la web desde el hilo del foro
+  El hilo de Hablemos de Relojes enlaza a la web con etiqueta de origen, así que Analytics muestra las visitas que llegan desde el foro.
+- [ ] R-19 Actividad del hilo y opiniones de foreros en la web
+  Mostrar cuántas respuestas tiene el hilo y cuándo se actualizó, y citar comentarios del foro como testimonios, con permiso de sus autores.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
@@ -55,14 +59,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Alcance:** tarjeta «Plan Básico» de `src/components/Roadmap.astro`; revisar también la tarjeta Premium (copias ilimitadas, sin anuncios) y la de «Futuro (v2.0)» frente a la hoja de ruta de la app.
 - **Criterios de hecho:** textos coherentes con la versión publicada en Play y `npm run build` sin errores.
 - **Dependencias:** publicar antes la 1.3 en Google Play (R-16 de la hoja de ruta de la app).
-
-### R-6 Integrar hilo HdR
-
-- **Origen:** NEXUS NX-570, tarjeta «Caliber Guard Landing».
-- **Objetivo:** dar a conocer el hilo de build in public del foro y llevar tráfico en ambos sentidos.
-- **Hilo:** https://www.hablemosderelojes.com/t/caliber-guard-he-creado-una-app-para-gestionar-colecciones-de-relojes-y-me-gustaria-vuestra-opinion/273999
-- **Alcance:** un enlace visible («Sigue el desarrollo en Hablemos de Relojes») en la sección de historia o junto al registro de cambios de `src/components/Roadmap.astro`, y otro en el pie. Abrir en pestaña nueva con `rel="noopener"`.
-- **Criterios de hecho:** enlace visible en escritorio y móvil, `npm run build` sin errores.
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
 
@@ -91,7 +87,7 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 - Subtítulo propuesto: «Descubre qué relojes llevas de verdad, cuándo toca revisión y cuánto vale tu colección. Todo en tu móvil, sin crear cuenta.»
 - Debajo de los botones: «Gratis para siempre. Premium sin anuncios desde X €» (falta el precio real).
-- Prueba social: valoración y descargas de Play y enlace al hilo de HdR (depende de R-6).
+- Prueba social: valoración y descargas de Play, y una línea como «Hecha con el feedback de la comunidad de Hablemos de Relojes» que enlace al hilo (usar `HDR_THREAD_URL` de `src/config.ts`).
 - Valorar un botón de descarga fijo en la cabecera para móvil.
 
 ### R-12 Sección de planes con precio, separada de la hoja de ruta
@@ -135,3 +131,11 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - Páginas candidatas: control de marcha de relojes automáticos, registro de uso de relojes, inventario de relojes para el seguro.
 - Blog en `/blog` con colecciones de contenido de Astro. Temas ligados a la app: medir la marcha, cada cuánto revisar un reloj, asegurar una colección, coste por puesta.
 - Decidir qué hacer con los enlaces a completatuestilo.com.
+
+### R-19 Actividad del hilo y opiniones de foreros en la web
+
+- **Objetivo:** reforzar la prueba social con actividad real del foro.
+- **Actividad:** HdR usa Discourse, que publica cada hilo en JSON (`/t/273999.json`). Leerlo al compilar para mostrar «X respuestas · actualizado hace N días» junto al enlace de la historia. Si la petición falla, el build tiene que seguir y mostrar solo el enlace.
+- **Testimonios:** dos o tres comentarios del hilo con su nombre de usuario, cada uno con permiso de su autor. Valorar si encajan en la historia o en el hero (R-11).
+- **Antes de empezar:** comprobar con el evento `click_forum_hdr` de Analytics que la gente pulsa los enlaces.
+- **Criterios de hecho:** los datos se ven en la web, el build no se rompe sin conexión con el foro y hay permiso guardado de cada testimonio.

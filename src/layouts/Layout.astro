@@ -93,6 +93,19 @@ const GA_ID = 'G-QCZXVWE90J';
           });
         });
 
+        // Track clicks on the Hablemos de Relojes thread
+        document.querySelectorAll<HTMLElement>('.js-ga-forum-link').forEach(link => {
+          link.addEventListener('click', () => {
+            // @ts-ignore
+            if (typeof gtag !== 'undefined') {
+              // @ts-ignore
+              gtag('event', 'click_forum_hdr', {
+                'event_category': 'engagement',
+                'event_label': link.dataset.position ?? 'unknown'
+              });
+            }
+          });
+        });
       });
     </script>
 	</body>

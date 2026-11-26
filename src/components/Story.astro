@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import collectionAnonImg from '../assets/screens/collection-anon.jpg';
+import { HDR_THREAD_URL } from '../config';
 ---
 <section class="py-20 lg:py-32 bg-surface border-y border-border">
   <div class="container mx-auto px-4 max-w-3xl text-center">
@@ -17,6 +18,22 @@ import collectionAnonImg from '../assets/screens/collection-anon.jpg';
         <span class="text-primary font-normal not-italic">MoonSwatch</span>."
       </p>
     </blockquote>
+
+    <div class="mt-10 space-y-4">
+      <a
+        href={HDR_THREAD_URL}
+        target="_blank"
+        rel="noopener"
+        data-position="story"
+        class="js-ga-forum-link w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-black font-bold rounded-full transition-colors"
+      >
+        Sigue el desarrollo en Hablemos de Relojes
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <p class="text-sm text-text-muted max-w-md mx-auto">
+        Cuento cada versión en el foro y las ideas de los foreros acaban en la app. Pásate, pregunta o propón lo que te falte.
+      </p>
+    </div>
 
     <!-- Optional Visual -->
     <div class="mt-12 opacity-50 hover:opacity-100 transition-opacity duration-700">

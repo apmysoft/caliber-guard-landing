@@ -1,5 +1,6 @@
 ---
 import changelogData from '../content/changelog.json';
+import { HDR_THREAD_URL } from '../config';
 ---
 
 <section class="py-20 lg:py-32">
@@ -176,7 +177,11 @@ import changelogData from '../content/changelog.json';
 
     <!-- Changelog -->
     <div class="max-w-3xl mx-auto border-t border-border pt-16">
-      <h3 class="text-xl font-bold mb-8 text-text-muted uppercase tracking-widest text-sm">Registro de cambios</h3>
+      <h3 class="text-xl font-bold mb-2 text-text-muted uppercase tracking-widest text-sm">Registro de cambios</h3>
+      <p class="text-sm text-text-muted mb-8">
+        ¿Echas algo en falta?
+        <a href={HDR_THREAD_URL} target="_blank" rel="noopener" data-position="changelog" class="js-ga-forum-link text-primary hover:text-primary-hover underline underline-offset-4">Propónlo en el hilo del foro</a>.
+      </p>
       <div class="space-y-8 relative before:absolute before:left-[7px] before:top-10 before:bottom-0 before:w-[2px] before:bg-border">
         {changelogData.map((log) => (
           <div class="relative pl-8">
