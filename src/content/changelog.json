@@ -2,7 +2,7 @@
     {
         "version": "v1.0",
         "date": "15 Feb 2026",
-        "description": "Fase beta cerrada. Funcionalidades: Añadir relojes, uso, wishlist, analíticas y exportación de datos."
+        "description": "Fase beta cerrada. Funciones: alta de relojes, registro de uso, wishlist, analítica y exportación de datos."
     },
     {
         "version": "v1.1.2",
@@ -27,12 +27,12 @@
     {
         "version": "v1.2.5",
         "date": "10 May 2026",
-        "description": "Mejora herramienta de fotografía, centralización de datos del reloj, modo privacidad económica, corrección de bugs en menú de puestas y backups"
+        "description": "Mejoras en la herramienta de fotografía, centralización de datos del reloj, modo privacidad económica, corrección de errores en el menú de puestas y en las copias de seguridad."
     },
     {
         "version": "v1.2.6",
         "date": "24 May 2026",
-        "description": "Mejora de rendimiento de la app en el arranque en frío, corrección de bugs. Nuevos gráficos en la sección de estadísticas de uso."
+        "description": "Mejora de rendimiento de la app en el arranque en frío, corrección de errores. Nuevos gráficos en la sección de estadísticas de uso."
     },
     {
         "version": "v1.3",
@@ -42,6 +42,6 @@
     {
         "version": "v1.4",
         "date": "(Próximamente)",
-        "description": "Rediseño de la función de Cronometría."
+        "description": "Rediseño de la función de cronometría."
     }
 ]

@@ -9,21 +9,24 @@ const features = [
     title: "Control de uso",
     text: "Registra cada puesta y descubre qué relojes estás usando de verdad. Rankings, porcentajes y rotación en segundos.",
     notes: ["Gratis: registro de puestas", "Premium: informes y estadísticas de uso"],
-    image: usageLogImg, 
+    image: usageLogImg,
+    alt: "Calendario de uso de Caliber Guard con el reloj que se llevó cada día del mes",
     align: "right"
   },
   {
-    title: "Mantenimiento y Cronometría",
+    title: "Mantenimiento y cronometría",
     text: "Planifica revisiones, guarda notas y controla la marcha. Tu historial, siempre a mano.",
     notes: ["Gratis: cronometría básica", "Premium: mantenimiento con costes y alertas"],
     image: chronometryImg,
+    alt: "Cronometría de un Hamilton Murph en Caliber Guard: precisión media de -1,5 segundos al día y sus mediciones",
     align: "left"
   },
   {
     title: "Analítica económica",
-    text: "Entiende tu pasión. Dashboard financiero con ROI, gráficos de uso y generación de fichas tácticas para compartir en redes.",
+    text: "Cuánto has invertido, cuánto has recuperado con las ventas y cuánto te cuesta cada puesta. Y los relojes que más usas, listos para compartir en redes.",
     notes: ["Premium: analítica avanzada y exportación"],
     image: statisticsImg,
+    alt: "Analítica de Caliber Guard con inversión, ventas, balance neto y los diez relojes más usados",
     align: "right"
   }
 ];
@@ -59,7 +62,7 @@ const features = [
              <div class="relative w-full max-w-[300px] bg-surface rounded-[2rem] border-4 border-border overflow-hidden transform transition-transform duration-500 hover:scale-[1.02]">
                 <Image 
                   src={feature.image} 
-                  alt={feature.title}
+                  alt={feature.alt}
                   class="w-full h-auto object-contain"
                   width={300}
                 />

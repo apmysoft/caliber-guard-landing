@@ -35,8 +35,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Subtítulo con beneficios, precios claros, valoración de Play y enlace al foro; botón de descarga fijo en la cabecera e iOS como enlace secundario. La valoración se actualiza a mano.
 - [x] R-12 Sección de planes con precio, separada de la hoja de ruta
   Sección «Planes» propia, con precio, ahorro del plan anual y botón de descarga en cada plan. La hoja de ruta queda aparte, tras las preguntas frecuentes.
-- [ ] R-13 Pulir textos, mayúsculas y textos alternativos
-  Mayúsculas a la española, menos anglicismos, textos alternativos descriptivos, registro de cambios de lo más nuevo a lo más antiguo y otros retoques de copy.
+- [x] R-13 Pulir textos, mayúsculas y textos alternativos
+  Textos de funciones, audiencia e historia sin jerga, textos alternativos descriptivos, registro de cambios de lo más nuevo a lo más antiguo, pie sin icono duplicado y README propio.
 - [ ] R-14 Tipografías, contraste y carga del hero
   Cargar la negrita real de Inter, subir el contraste del texto gris y evitar que la animación retrase la carga del contenido principal.
 - [ ] R-15 Medir instalaciones desde la web y altas reales en la lista iOS
@@ -54,17 +54,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 ## Detalle de lo pendiente
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-13 Pulir textos, mayúsculas y textos alternativos
-
-- Funciones: cambiar «fichas tácticas», «ROI» y «Entiende tu pasión» por beneficios concretos.
-- Audiencia: «Colección 10+» excluye a quien empieza.
-- Historia: firma del autor, «Excel» con mayúscula, «registrar» en vez de «trackear».
-- Registro de cambios en orden inverso.
-- Textos alternativos descriptivos y en español (hero, funciones). Logo con `alt=""` cuando va junto al nombre.
-- Pie: el icono «Suscribirse a newsletter» es un `mailto`; abrir el modal o cambiar la etiqueta.
-- Artículos externos: avisar de que son de otra web.
-- Sustituir el README de plantilla de Astro.
 
 ### R-14 Tipografías, contraste y carga del hero
 

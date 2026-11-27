@@ -1,43 +1,39 @@
-# Astro Starter Kit: Minimal
+# Caliber Guard · web
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Web pública de [Caliber Guard](https://caliberguard.com), la app Android para coleccionistas de relojes. Está hecha con Astro y Tailwind CSS y se publica en Cloudflare Pages con cada push a `main`.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Comandos
 
-## 🚀 Project Structure
+| Comando           | Qué hace                                    |
+| :---------------- | :------------------------------------------ |
+| `npm install`     | Instala las dependencias                    |
+| `npm run dev`     | Servidor local en `http://localhost:4321`   |
+| `npm run build`   | Genera la web estática en `dist/`           |
+| `npm run preview` | Sirve `dist/` en local para revisarla       |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Dónde se cambia cada cosa
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| Qué                                          | Dónde                                   |
+| :------------------------------------------- | :-------------------------------------- |
+| Precios de Premium, valoración de Play, URL de Play y del hilo del foro | `src/config.ts` |
+| Funciones de cada plan                       | `src/components/Plans.astro`            |
+| Preguntas frecuentes (página y datos estructurados) | `src/content/faq.ts`             |
+| Registro de cambios                          | `src/content/changelog.json`            |
+| «Próximamente»                               | `src/components/Roadmap.astro`          |
+| Título, descripción y datos estructurados de la portada | `src/pages/index.astro`      |
+| Metadatos comunes, analítica y eventos       | `src/layouts/Layout.astro`              |
+| Imagen para compartir en redes               | `public/og-image.jpg` (1200×630)        |
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Los precios y la valoración se escriben a mano: si cambian en Google Play, hay que actualizarlos en `src/config.ts`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Analítica
 
-Any static assets, like images, can be placed in the `public/` directory.
+Google Analytics solo se carga si el visitante acepta las cookies. Eventos propios:
 
-## 🧞 Commands
+- `click_download_android`: clic en un enlace a Google Play, con la posición del botón (`hero`, `header`, `mini_cta`, `plans_free`, `plans_premium`).
+- `click_forum_hdr`: clic en el hilo de Hablemos de Relojes (`hero`, `story`, `changelog`, `footer`).
+- `cta_ios_click` y `cta_ios_form_submit`: lista de espera de iPhone.
 
-All commands are run from the root of the project, from a terminal:
+## Hoja de ruta
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+El trabajo pendiente está en [`ROADMAP.md`](ROADMAP.md).
