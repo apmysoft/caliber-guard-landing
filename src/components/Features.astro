@@ -8,21 +8,21 @@ const features = [
   {
     title: "Control de uso",
     text: "Registra cada puesta y descubre qué relojes estás usando de verdad. Rankings, porcentajes y rotación en segundos.",
-    note: "Free: Básico | Premium: más métricas y filtros",
+    notes: ["Gratis: registro de puestas", "Premium: informes y estadísticas de uso"],
     image: usageLogImg, 
     align: "right"
   },
   {
     title: "Mantenimiento y Cronometría",
     text: "Planifica revisiones, guarda notas y controla la marcha. Tu historial, siempre a mano.",
-    note: "Free: básico | Premium: recordatorios y seguimiento avanzado",
+    notes: ["Gratis: cronometría básica", "Premium: mantenimiento con costes y alertas"],
     image: chronometryImg,
     align: "left"
   },
   {
     title: "Analítica económica",
     text: "Entiende tu pasión. Dashboard financiero con ROI, gráficos de uso y generación de fichas tácticas para compartir en redes.",
-    note: "Premium: Exportación + analíticas avanzadas",
+    notes: ["Premium: analítica avanzada y exportación"],
     image: statisticsImg,
     align: "right"
   }
@@ -45,8 +45,12 @@ const features = [
             <p class="text-lg text-text-muted leading-relaxed text-balance">
               {feature.text}
             </p>
-            <div class="inline-flex items-center px-3 py-1 bg-surface border border-border rounded-full text-xs font-mono text-primary">
-              {feature.note}
+            <div class="flex flex-wrap gap-2">
+              {feature.notes.map((note) => (
+                <div class="inline-flex items-center px-3 py-1 bg-surface border border-border rounded-full text-xs font-mono text-primary">
+                  {note}
+                </div>
+              ))}
             </div>
           </div>
 

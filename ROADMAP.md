@@ -25,8 +25,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 - [x] R-7 Favicon ligero y metadatos para buscadores y redes sociales
   Favicon de 4 MB y logos por defecto de Astro sustituidos por el de Caliber Guard en pocos KB. Cada página tiene ya título, descripción, canonical e imagen para compartir.
-- [ ] R-8 Quitar promesas falsas y unificar qué es gratis y qué es Premium
-  La web dice «sin tracking» aunque hay analítica y anuncios, y las copias y el mantenimiento aparecen como gratis en un sitio y Premium en otro.
+- [x] R-8 Quitar promesas falsas y unificar qué es gratis y qué es Premium
+  Fuera el «sin tracking» y la promesa de exportar gratis; las funciones indican qué es gratis y qué Premium igual que la app. La insignia de copias cambia con R-5.
 - [ ] R-9 Datos estructurados de la app para Google
   Describir la app, sus planes y su valoración en un formato que Google entiende, para optar a resultados enriquecidos.
 - [ ] R-10 Sección de preguntas frecuentes
@@ -57,19 +57,11 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 - **Objetivo:** que la comparativa de planes refleje lo que ofrece la versión gratuita desde la 1.3.
 - **Alcance:** tarjeta «Plan Básico» de `src/components/Roadmap.astro`; revisar también la tarjeta Premium (copias ilimitadas, sin anuncios) y la de «Futuro (v2.0)» frente a la hoja de ruta de la app.
+- **También:** la insignia «Premium: Copia de seguridad y Restauración» de `src/components/Privacy.astro` pasa a «Gratis: una copia al mes» y «Premium: copias ilimitadas», porque desde la 1.3 restaurar es libre y hay una copia mensual gratuita.
 - **Criterios de hecho:** textos coherentes con la versión publicada en Play y `npm run build` sin errores.
 - **Dependencias:** publicar antes la 1.3 en Google Play (R-16 de la hoja de ruta de la app).
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-8 Quitar promesas falsas y unificar qué es gratis y qué es Premium
-
-- **Objetivo:** que ningún texto contradiga la política de privacidad ni a otra sección.
-- **Alcance:**
-  - `src/components/Privacy.astro`: cambiar «Sin cuentas, sin nube, sin tracking» por algo como «Sin cuentas ni nube propia. Tu colección vive en tu móvil y la exportas cuando quieras». Revisar la insignia «Premium: Copia de seguridad y Restauración» frente a la copia mensual gratuita de la 1.3.
-  - `src/components/Features.astro`: notas de plan coherentes con las tarjetas (el mantenimiento aparece como básico gratis y como función Premium).
-  - Ir junto con R-5.
-- **Criterios de hecho:** cada función aparece en el mismo plan en toda la página y coincide con la app publicada.
 
 ### R-9 Datos estructurados de la app para Google
 
@@ -99,7 +91,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 ### R-13 Pulir textos, mayúsculas y textos alternativos
 
 - Mayúsculas a la española en las tarjetas de planes («Inventario ilimitado», «Coste por puesta»).
-- Notas de plan con un formato único: «Gratis: … · Premium: …».
 - Funciones: cambiar «fichas tácticas», «ROI» y «Entiende tu pasión» por beneficios concretos.
 - Audiencia: «Colección 10+» excluye a quien empieza.
 - Historia: firma del autor, «Excel» con mayúscula, «registrar» en vez de «trackear».
