@@ -11,6 +11,8 @@ import Articles from '../components/Articles.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import WaitlistModal from '../components/WaitlistModal.astro';
+import Faq from '../components/Faq.astro';
+import { faq } from '../content/faq';
 import { SITE_URL, PLAY_URL, PREMIUM_PRICES } from '../config';
 
 const description =
@@ -74,6 +76,15 @@ const structuredData = {
         premiumOffer('Premium anual', PREMIUM_PRICES.yearly, 'P1Y', 'ANN'),
       ],
     },
+    {
+      '@type': 'FAQPage',
+      '@id': `${SITE_URL}#faq`,
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    },
   ],
 };
 ---
@@ -92,6 +103,7 @@ const structuredData = {
 		<Story />
 		<Privacy />
 		<Roadmap />
+		<Faq />
 		<Articles />
 	</main>
 	<Footer />

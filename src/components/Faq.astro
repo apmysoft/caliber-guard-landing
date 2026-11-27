@@ -1,0 +1,38 @@
+---
+import { faq } from '../content/faq';
+---
+
+<section id="preguntas-frecuentes" class="py-20 lg:py-32 bg-background">
+  <div class="container mx-auto px-4 max-w-3xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Preguntas frecuentes</h2>
+      <p class="text-text-muted text-lg">Lo que suele preguntarse antes de descargarla.</p>
+    </div>
+
+    <div class="space-y-4">
+      {faq.map((item) => (
+        <details class="group rounded-2xl bg-surface border border-border open:border-primary/30 transition-colors">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 lg:p-6 font-bold text-lg text-text-main [&::-webkit-details-marker]:hidden">
+            <h3>{item.question}</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0 text-primary transition-transform group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="px-5 pb-5 lg:px-6 lg:pb-6 -mt-1 space-y-4">
+            <p class="text-text-muted leading-relaxed">{item.answer}</p>
+            {item.action === 'ios-waitlist' && (
+              <button class="js-open-ios-waitlist inline-flex items-center gap-2 text-primary hover:text-primary-hover font-bold transition-colors">
+                Avisarme cuando salga en iPhone
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            )}
+            {item.action === 'privacy' && (
+              <a href="/privacy/" class="inline-flex items-center gap-2 text-primary hover:text-primary-hover font-bold transition-colors">
+                Leer la política de privacidad
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

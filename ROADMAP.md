@@ -29,8 +29,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Fuera el «sin tracking» y la promesa de exportar gratis; las funciones indican qué es gratis y qué Premium igual que la app. La insignia de copias cambia con R-5.
 - [x] R-9 Datos estructurados de la app para Google
   La portada describe para Google la app, la organización y los planes gratis, mensual y anual con IVA. Los precios se ven ya en las tarjetas de planes.
-- [ ] R-10 Sección de preguntas frecuentes
-  Responder precio, iOS, cambio de móvil, uso sin conexión e importación desde Excel; resuelve dudas antes de descargar y atrae búsquedas concretas.
+- [x] R-10 Sección de preguntas frecuentes
+  Seis preguntas desplegables tras los planes: precio, iPhone, cambio de móvil, uso sin conexión, importación desde Excel y datos recogidos, también en los datos estructurados.
 - [ ] R-11 Hero centrado en beneficios y con prueba social
   Reescribir el subtítulo sin jerga, presentar el plan gratuito en positivo y mostrar valoración, descargas y el hilo del foro.
 - [ ] R-12 Sección de planes con precio, separada de la hoja de ruta
@@ -55,18 +55,13 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
 
-### R-10 Sección de preguntas frecuentes
-
-- Preguntas: precio de Premium, versión iOS, qué pasa al cambiar de móvil (copias), uso sin conexión, importación CSV/Excel, qué datos se recogen.
-- Usar `<details>` para que sea accesible sin JavaScript.
-- Añadir un nodo `FAQPage` al `@graph` de `structuredData` en `src/pages/index.astro`, con las mismas preguntas y respuestas que se ven en la página.
-
 ### R-11 Hero centrado en beneficios y con prueba social
 
 - Subtítulo propuesto: «Descubre qué relojes llevas de verdad, cuándo toca revisión y cuánto vale tu colección. Todo en tu móvil, sin crear cuenta.»
 - Debajo de los botones: «Gratis para siempre. Premium sin anuncios desde X €» (falta el precio real).
 - Prueba social: valoración y descargas de Play (cuando la valoración se vea en la página, añadir `aggregateRating` al nodo `MobileApplication` de `src/pages/index.astro`; Google lo necesita para mostrar estrellas), y una línea como «Hecha con el feedback de la comunidad de Hablemos de Relojes» que enlace al hilo (usar `HDR_THREAD_URL` de `src/config.ts`).
 - Valorar un botón de descarga fijo en la cabecera para móvil.
+- iOS está en pausa por coste (ver la pregunta frecuente): el botón «Quiero la versión iOS» del hero promete más de lo que hay. Valorar «Avísame si sale en iPhone» como enlace secundario, y cambiar en `src/components/WaitlistModal.astro` el «Te avisaremos pronto» del mensaje de éxito.
 
 ### R-12 Sección de planes con precio, separada de la hoja de ruta
 
