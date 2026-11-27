@@ -17,6 +17,7 @@ Web pública de [Caliber Guard](https://caliberguard.com), la app Android para c
 | :------------------------------------------- | :-------------------------------------- |
 | Precios de Premium, valoración de Play, URL de Play y del hilo del foro | `src/config.ts` |
 | Funciones de cada plan                       | `src/components/Plans.astro`            |
+| Páginas por función (`/funciones/…`)         | `src/pages/funciones/`, plantilla en `src/layouts/FeaturePage.astro` y lista en `src/content/features.ts` |
 | Preguntas frecuentes (página y datos estructurados) | `src/content/faq.ts`             |
 | Registro de cambios                          | `src/content/changelog.json`            |
 | «Próximamente»                               | `src/components/Roadmap.astro`          |
@@ -30,7 +31,7 @@ Los precios y la valoración se escriben a mano: si cambian en Google Play, hay 
 
 Google Analytics solo se carga si el visitante acepta las cookies. Eventos propios:
 
-- `click_download_android`: clic en un enlace a Google Play, con la posición del botón (`hero`, `header`, `mini_cta`, `plans_free`, `plans_premium`).
+- `click_download_android`: clic en un enlace a Google Play, con la posición del botón (`hero`, `header`, `mini_cta`, `plans_free`, `plans_premium` y `feature_<página>` en las páginas por función).
 - `click_forum_hdr`: clic en el hilo de Hablemos de Relojes (`hero`, `story`, `changelog`, `footer`).
 - `cta_ios_click`: apertura de la lista de espera de iPhone. `cta_ios_form_submit`: alta confirmada por MailerLite.
 

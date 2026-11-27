@@ -43,23 +43,19 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Cada botón a Google Play lleva su etiqueta de origen para Play Console y Firebase, y la lista de iPhone solo confirma y cuenta las altas que MailerLite acepta.
 - [x] R-16 Banner de cookies con rechazo igual de visible
   Rechazar y aceptar con el mismo botón, y enlace «Configurar cookies» en el pie para cambiar la elección; al retirar el consentimiento se borran las cookies de Analytics.
-- [ ] R-17 Contenido propio: páginas por función y blog
-  Crear páginas propias para las funciones clave y un blog en el dominio, en lugar de enviar todo el tráfico de artículos a otra web.
+- [x] R-17 Contenido propio: páginas por función
+  Páginas de cronometría, registro de uso e inventario para el seguro, enlazadas desde la portada y el pie. El blog pasa a R-20.
 - [x] R-18 Enlace a la web desde el hilo del foro
   El hilo de Hablemos de Relojes enlaza a la web con etiqueta de origen, así que Analytics muestra las visitas que llegan desde el foro.
 - [ ] R-19 Actividad del hilo y opiniones de foreros en la web
   Mostrar cuántas respuestas tiene el hilo y cuándo se actualizó, y citar comentarios del foro como testimonios, con permiso de sus autores.
+- [ ] R-20 Blog propio en el dominio
+  Artículos de relojería ligados a la app en caliberguard.com/blog, y decidir qué hacer con los enlaces a Completa tu Estilo.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-17 Contenido propio: páginas por función y blog
-
-- Páginas candidatas: control de marcha de relojes automáticos, registro de uso de relojes, inventario de relojes para el seguro.
-- Blog en `/blog` con colecciones de contenido de Astro. Temas ligados a la app: medir la marcha, cada cuánto revisar un reloj, asegurar una colección, coste por puesta.
-- Decidir qué hacer con los enlaces a completatuestilo.com.
 
 ### R-19 Actividad del hilo y opiniones de foreros en la web
 
@@ -68,3 +64,13 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Testimonios:** dos o tres comentarios del hilo con su nombre de usuario, cada uno con permiso de su autor. Valorar si encajan en la historia o en el hero (R-11).
 - **Antes de empezar:** comprobar con el evento `click_forum_hdr` de Analytics que la gente pulsa los enlaces.
 - **Criterios de hecho:** los datos se ven en la web, el build no se rompe sin conexión con el foro y hay permiso guardado de cada testimonio.
+
+### R-20 Blog propio en el dominio
+
+- **Objetivo:** atraer búsquedas informativas de relojería a caliberguard.com y llevarlas a la app, en lugar de mandar a los lectores a otra web.
+- **Decisiones del usuario antes de empezar:**
+  - Qué hacer con la sección «Aprende sobre relojes», que enlaza a completatuestilo.com: mantenerla, quitarla o sustituirla por los artículos propios.
+  - Quién firma los artículos (Tony, en primera persona como en la historia) y si se escriben a partir de borradores suyos.
+- **Temas propuestos:** cada cuánto revisar un reloj automático; cómo medir la marcha (enlazar con la página de cronometría); cómo asegurar una colección de relojes (enlazar con la de inventario); coste por puesta y rotación de la colección.
+- **Notas técnicas:** colección de contenido de Astro en `src/content/blog/`, rutas `/blog/` y `/blog/<slug>/`, datos estructurados `BlogPosting`, aparición en el sitemap y enlace en el pie.
+- **Criterios de hecho:** al menos tres artículos publicados, enlazados entre sí y con las páginas de funciones.

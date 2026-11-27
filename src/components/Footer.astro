@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import appIcon from '../assets/app_icon.png';
 import { HDR_THREAD_URL } from '../config';
+import { featurePages, featureUrl } from '../content/features';
 const year = new Date().getFullYear();
 ---
 
@@ -43,4 +44,11 @@ const year = new Date().getFullYear();
     </div>
 
   </div>
+
+  <nav aria-label="Funciones" class="container mx-auto px-4 max-w-6xl mt-8 pt-6 border-t border-border flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2">
+    <span class="text-text-main font-medium">Funciones:</span>
+    {featurePages.map((page) => (
+      <a href={featureUrl(page.slug)} class="hover:text-text-main transition-colors">{page.label}</a>
+    ))}
+  </nav>
 </footer>
