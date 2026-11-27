@@ -68,6 +68,10 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Publicada en el mensaje 62 del hilo el 27/11/2026: copia mensual gratis, aviso de copia, prueba de 24 h y copias más fiables, con la 1.4 de la cronometría como lo siguiente.
 - [x] R-27 Ficha de Google Play que aparezca en las búsquedas
   Descripciones nuevas publicadas el 27/11/2026, al día con la 1.3 y con las palabras que buscan los aficionados. Hacia el 25/12/2026, comparar las instalaciones por búsqueda con las de antes.
+- [ ] R-28 Presentar la app en el foro Relojes Especiales
+  Responder como autor en los hilos donde se pregunta por apps para la colección, respetando las normas del foro sobre autopromoción. Es el mayor foro de relojería en español y sus hilos siguen atrayendo lectores desde Google.
+- [ ] R-29 Segunda ronda de canales y podcasts con la 1.4
+  Cuando salga la cronometría por posiciones, contactar con Horas y Minutos, El Relojero Aficionado y los podcasts El Podcast de Klokker y Tiempo y Estilo, con lo aprendido en la primera ronda.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
@@ -100,7 +104,7 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Objetivo:** llegar a audiencias de aficionados ya formadas sin tener que crear comunidad propia.
 - **Pasos:**
   1. Premium vitalicio se regala desde RevenueCat como derecho promocional, con el identificador del móvil del creador. Para sacarlo: Ajustes → pulsar 7 veces el texto «CALIBER GUARD v…» del final → Pantalla Secreta → copiar el ID. El ID es anónimo y va ligado a la instalación: si el creador reinstala o cambia de móvil, tiene que mandar el nuevo.
-  2. Personalizar el mensaje de primer contacto (dos variantes en la conversación del 27/11/2026) con algo real de cada canal, y enviarlo por el correo de contacto del canal.
+  2. Personalizar el borrador de cada canal (conversación del 27/11/2026: Alfredo García, por El Número Uno; Atrapando el Tiempo, por sus charlas con aficionados, con la propuesta de salir en una) y enviarlo por el correo de contacto del canal. Confirmar antes el nombre del autor de Atrapando el Tiempo.
   3. Si aceptan, darles un código de un mes de Premium para su audiencia, como el que se regaló en el foro, y un enlace etiquetado para la descripción del vídeo:
      - Dando la Hora: `https://play.google.com/store/apps/details?id=com.apmysoft.caliber_guard&referrer=utm_source%3Ddandolahora%26utm_medium%3Dvideo%26utm_campaign%3Dcreadores`
      - Atrapando el Tiempo: el mismo con `utm_source%3Datrapandoeltiempo`.
@@ -108,3 +112,21 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Dependencias y riesgos:** la audiencia de Dando la Hora es sobre todo latinoamericana y la app solo trabaja en euros (R-21 de la app, idiomas y monedas); avisarlo en el mensaje. La cronometría por posiciones (R-19 de la app, versión 1.4) es la mejor ocasión para una segunda propuesta.
 - **Criterios de hecho:** mensajes enviados a los dos canales y respuesta (o falta de ella) apuntada aquí.
 
+### R-28 Presentar la app en el foro Relojes Especiales
+
+- **Objetivo:** estar presente donde los aficionados en español buscan apps para su colección, con una respuesta que siga trayendo lectores durante años.
+- **Hilos candidatos:**
+  - «¿Usáis alguna app relojera? ¿Cuál sería la app perfecta?»: https://relojes-especiales.com/threads/%C2%BFus%C3%A1is-alguna-app-relojera-%C2%BFcu%C3%A1l-ser%C3%ADa-la-app-perfecta.517897/
+  - «App para organizar la colección de relojes»: https://relojes-especiales.com/threads/app-para-organizar-la-coleccion-de-relojes.457078/
+- **Antes de escribir:** leer las normas sobre autopromoción y, si hay dudas, preguntar a un moderador si conviene un hilo propio en el subforo adecuado.
+- **Tono:** el de `docs/estilo-hilo-hdr.md`, adaptado a un foro donde nadie conoce la app: decir desde la primera línea que eres el autor y responder a lo que pedía el hilo.
+- **Medición:** enlace a la web con `utm_source=relojesespeciales&utm_medium=foro`.
+- **Criterios de hecho:** respuesta o hilo publicado con permiso del foro, y las visitas que llegan desde Relojes Especiales visibles en Analytics.
+
+### R-29 Segunda ronda de canales y podcasts con la 1.4
+
+- **Depende de:** la 1.4 publicada (R-19 de la app) y lo aprendido en R-25: qué mensaje funcionó y cuántas instalaciones llegaron.
+- **Canales:** Horas y Minutos (Santiago Tejedor), el más recomendado en español aunque publica poco, y El Relojero Aficionado, con relojes asequibles y un público que encaja. Big Ben Theory y Nicol's TV encajan menos.
+- **Podcasts:** El Podcast de Klokker (semanal, centrado en quien lleva el reloj) y Tiempo y Estilo (iVoox). Proponer una entrevista sobre el aficionado que se programa su propia app.
+- **Mismo regalo y medición que R-25:** Premium vitalicio desde RevenueCat, un mes para la audiencia y un enlace etiquetado por canal.
+- **Criterios de hecho:** contactos enviados y respuestas apuntadas aquí.
