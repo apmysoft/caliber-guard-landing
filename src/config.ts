@@ -7,6 +7,9 @@ export const PREMIUM_PRICES = {
   yearly: '29.99',
 } as const;
 
+/** Valoración media en Google Play (comprobada el 27/11/2026). Actualizar a mano. */
+export const PLAY_RATING = '5,0';
+
 /** Formato español para mostrar un precio: 3.99 -> «3,99 €». */
 export const formatEUR = (price: string) => `${price.replace('.', ',')} €`;
 

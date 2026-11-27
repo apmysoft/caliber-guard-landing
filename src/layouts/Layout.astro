@@ -80,7 +80,7 @@ const GA_ID = 'G-QCZXVWE90J';
       // Global Analytics Event Listeners
       document.addEventListener('DOMContentLoaded', () => {
         // Track Android Download Clicks
-        const androidButtons = document.querySelectorAll('.js-ga-android-link');
+        const androidButtons = document.querySelectorAll<HTMLElement>('.js-ga-android-link');
         androidButtons.forEach(btn => {
           btn.addEventListener('click', () => {
              // @ts-ignore
@@ -88,7 +88,7 @@ const GA_ID = 'G-QCZXVWE90J';
                // @ts-ignore
               gtag('event', 'click_download_android', {
                 'event_category': 'engagement',
-                'event_label': 'hero_android_download'
+                'event_label': btn.dataset.position ?? 'unknown'
               });
             }
           });
