@@ -37,8 +37,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Sección «Planes» propia, con precio, ahorro del plan anual y botón de descarga en cada plan. La hoja de ruta queda aparte, tras las preguntas frecuentes.
 - [x] R-13 Pulir textos, mayúsculas y textos alternativos
   Textos de funciones, audiencia e historia sin jerga, textos alternativos descriptivos, registro de cambios de lo más nuevo a lo más antiguo, pie sin icono duplicado y README propio.
-- [ ] R-14 Tipografías, contraste y carga del hero
-  Cargar la negrita real de Inter, subir el contraste del texto gris y evitar que la animación retrase la carga del contenido principal.
+- [x] R-14 Tipografías, contraste y carga del hero
+  Inter con negrita real y solo caracteres latinos, texto gris con contraste de 5,2:1 o más, hero visible desde el primer instante, theme-color y manifest web.
 - [ ] R-15 Medir instalaciones desde la web y altas reales en la lista iOS
   Etiquetar los enlaces a Google Play para saber cuántas instalaciones vienen de la web, y no contar como alta un envío fallido a MailerLite.
 - [ ] R-16 Banner de cookies con rechazo igual de visible
@@ -54,13 +54,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 ## Detalle de lo pendiente
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-14 Tipografías, contraste y carga del hero
-
-- Importar Inter 400/600/700, solo el subconjunto latin, en `src/layouts/Layout.astro`.
-- Texto gris `#888` sobre `#2C2C2C` da un contraste aproximado de 3,9:1; subirlo a 4,5:1 como mínimo. Texto legal del modal a 12 px como mínimo.
-- El H1 y la imagen del hero arrancan con `opacity: 0`: acortar o quitar la animación de opacidad.
-- Añadir `theme-color` y el manifest web.
 
 ### R-15 Medir instalaciones desde la web y altas reales en la lista iOS
 
