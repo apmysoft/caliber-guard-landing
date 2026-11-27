@@ -7,6 +7,11 @@ export const PREMIUM_PRICES = {
   yearly: '29.99',
 } as const;
 
+/** Ahorro del plan anual frente a pagar 12 meses, en porcentaje redondeado. */
+export const YEARLY_SAVING_PERCENT = Math.round(
+  (1 - Number(PREMIUM_PRICES.yearly) / (Number(PREMIUM_PRICES.monthly) * 12)) * 100,
+);
+
 /** Valoración media en Google Play (comprobada el 27/11/2026). Actualizar a mano. */
 export const PLAY_RATING = '5,0';
 

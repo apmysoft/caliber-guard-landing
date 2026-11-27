@@ -33,8 +33,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Seis preguntas desplegables tras los planes: precio, iPhone, cambio de móvil, uso sin conexión, importación desde Excel y datos recogidos, también en los datos estructurados.
 - [x] R-11 Hero centrado en beneficios y con prueba social
   Subtítulo con beneficios, precios claros, valoración de Play y enlace al foro; botón de descarga fijo en la cabecera e iOS como enlace secundario. La valoración se actualiza a mano.
-- [ ] R-12 Sección de planes con precio, separada de la hoja de ruta
-  Hoy los planes están bajo «Roadmap y actualizaciones», sin botón de descarga en cada uno.
+- [x] R-12 Sección de planes con precio, separada de la hoja de ruta
+  Sección «Planes» propia, con precio, ahorro del plan anual y botón de descarga en cada plan. La hoja de ruta queda aparte, tras las preguntas frecuentes.
 - [ ] R-13 Pulir textos, mayúsculas y textos alternativos
   Mayúsculas a la española, menos anglicismos, textos alternativos descriptivos, registro de cambios de lo más nuevo a lo más antiguo y otros retoques de copy.
 - [ ] R-14 Tipografías, contraste y carga del hero
@@ -54,13 +54,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 ## Detalle de lo pendiente
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-12 Sección de planes con precio, separada de la hoja de ruta
-
-- Sacar las tarjetas Básico y Premium de `src/components/Roadmap.astro` a una sección «Planes» con botón en cada tarjeta. El precio ya se ve (sale de `PREMIUM_PRICES` en `src/config.ts`, que también usan los datos estructurados).
-- Destacar el ahorro del plan anual: 29,99 € frente a 47,88 € pagando 12 meses, un 37 % menos.
-- La licencia vitalicia no se anuncia en ningún sitio de la web.
-- Dejar la tarjeta «Futuro» y el registro de cambios en la hoja de ruta. Cambiar «mejoras trimestrales» por algo que case con el ritmo real.
 
 ### R-13 Pulir textos, mayúsculas y textos alternativos
 
