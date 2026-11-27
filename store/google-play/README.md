@@ -9,12 +9,14 @@ Capturas de teléfono de la ficha de Caliber Guard, sacadas el 27/11/2026 de un 
 | Fichero | Título |
 | :-- | :-- |
 | 01-inventario.jpg | Toda tu colección, en el bolsillo |
-| 02-uso2.jpg | Descubre qué relojes llevas de verdad |
-| 03-analitica5.jpg | Tu rotación, en datos |
-| 04-analitica.jpg | Inversión, ventas y balance |
-| 05-crono2.jpg | Mide la precisión de tu automático |
-| 06-stats2.jpg | Cada reloj, con sus estadísticas |
-| 07-analitica4.jpg | Tus diez relojes más usados |
+| 02-uso.jpg | Apunta qué reloj llevas cada día |
+| 03-uso2.jpg | Descubre cuáles usas de verdad |
+| 04-analitica5.jpg | Tu rotación, en datos |
+| 05-analitica.jpg | Inversión, ventas y balance |
+| 06-crono2.jpg | Mide la precisión de tu automático |
+| 07-stats2.jpg | Cada reloj, con sus estadísticas |
 | 08-ajustes2.jpg | Tus datos, en tu móvil: copias y exportación |
 
-En `03-analitica5.jpg`, el hueco bajo la cabecera está relleno con el color de fondo de la app para tapar el final del gráfico anterior; los datos no se han tocado.
+El calendario de `02-uso.jpg` muestra el mes y los días de la semana en inglés, un fallo conocido de la app que se corregirá; conviene sustituir esa captura cuando salga la versión que lo arregle.
+
+En `04-analitica5.jpg`, el hueco bajo la cabecera está relleno con el color de fondo de la app para tapar el final del gráfico anterior; los datos no se han tocado.
