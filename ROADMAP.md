@@ -66,8 +66,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Contactar con Dando la Hora y Atrapando el Tiempo ofreciendo Premium vitalicio y un mes de Premium para su audiencia, con enlaces etiquetados para medir lo que llega de cada canal.
 - [x] R-26 Intervención en el hilo de HdR con la 1.3
   Publicada en el mensaje 62 del hilo el 27/11/2026: copia mensual gratis, aviso de copia, prueba de 24 h y copias más fiables, con la 1.4 de la cronometría como lo siguiente.
-- [ ] R-27 Ficha de Google Play que aparezca en las búsquedas
-  Revisar el título, la descripción breve y la completa de la ficha con las palabras que buscan los aficionados, para que lleguen usuarios sin depender del foro ni de los vídeos.
+- [x] R-27 Ficha de Google Play que aparezca en las búsquedas
+  Descripciones nuevas publicadas el 27/11/2026, al día con la 1.3 y con las palabras que buscan los aficionados. Hacia el 25/12/2026, comparar las instalaciones por búsqueda con las de antes.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
@@ -108,9 +108,3 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Dependencias y riesgos:** la audiencia de Dando la Hora es sobre todo latinoamericana y la app solo trabaja en euros (R-21 de la app, idiomas y monedas); avisarlo en el mensaje. La cronometría por posiciones (R-19 de la app, versión 1.4) es la mejor ocasión para una segunda propuesta.
 - **Criterios de hecho:** mensajes enviados a los dos canales y respuesta (o falta de ella) apuntada aquí.
 
-### R-27 Ficha de Google Play que aparezca en las búsquedas
-
-- **Objetivo:** el diagnóstico de R-24 muestra que fuera del foro casi no llega nadie: una o dos instalaciones al mes desde junio. La ficha no aparece en las búsquedas de Google Play.
-- **Alcance:** título (30 caracteres), descripción breve (80) y descripción completa (4000), sin cambiar la app. Palabras candidatas a validar: colección de relojes, relojes automáticos, inventario, precisión, mantenimiento, coleccionista. Ni nombres de marcas ni promesas que la app no cumpla (R-8).
-- **Entrega:** textos listos para pegar en Play Console (Aumentar usuarios → Presencia en Play Store → Fichas de Play Store) y guardados en `store/google-play/`.
-- **Criterios de hecho:** textos publicados en la ficha. Cuatro semanas después, comparar las instalaciones por búsqueda en Play Console (Adquisición de usuarios) con las de antes.
