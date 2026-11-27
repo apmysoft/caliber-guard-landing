@@ -24,6 +24,8 @@ Web pública de [Caliber Guard](https://caliberguard.com), la app Android para c
 | Título, descripción y datos estructurados de la portada | `src/pages/index.astro`      |
 | Metadatos comunes, analítica y eventos       | `src/layouts/Layout.astro`              |
 | Imagen para compartir en redes               | `public/og-image.jpg` (1200×630)        |
+| Capturas de la app en la web                 | `src/assets/screens/` (1080 px de ancho, sin barras del sistema) |
+| Capturas para Google Play                    | `store/google-play/` (no se publican en la web) |
 
 Los precios y la valoración se escriben a mano: si cambian en Google Play, hay que actualizarlos en `src/config.ts`.
 

@@ -51,6 +51,10 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   En pausa. Mostrar cuántas respuestas tiene el hilo y cuándo se actualizó, y citar comentarios del foro como testimonios, con permiso de sus autores.
 - [ ] R-20 Sinergia con el blog Completa tu Estilo
   Los artículos se publican en Completa tu Estilo, el blog del autor, y las dos webs se enlazan. Ya enlazan las guías con etiqueta de origen; faltan las piezas nuevas.
+- [x] R-21 Capturas nuevas de la app en la web
+  Capturas de la versión 1.3 con la colección real en el hero, las funciones, la privacidad y la imagen para compartir, más ocho imágenes listas para Google Play.
+- [ ] R-22 Subir las capturas nuevas a la ficha de Google Play
+  Las ocho imágenes de 1080×1920 están preparadas, con su orden y sus títulos; falta subirlas desde Play Console.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
@@ -77,3 +81,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   - sustituir o completar las tarjetas de «Aprende sobre relojes» con las piezas nuevas;
   - enlazar desde cada página de función a su artículo (cronometría a las de revisar y medir; inventario a la de asegurar; registro de uso a la de coste por puesta).
 - **Criterios de hecho:** las cuatro piezas publicadas y enlazadas en los dos sentidos, con etiqueta de origen en ambos.
+
+### R-22 Subir las capturas nuevas a la ficha de Google Play
+
+- **Lo hace el usuario en Play Console:** Presencia en Google Play → Ficha principal de Play Store → Capturas de pantalla del teléfono. Sustituir las actuales por las de `store/google-play/`, en el orden de los ficheros.
+- Instrucciones y títulos en `store/google-play/README.md`.
