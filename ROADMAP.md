@@ -20,6 +20,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Las tarjetas y la insignia de copias cuentan la copia mensual gratis y la prueba de 24 h; Premium, las copias ilimitadas; y «Próximamente» sigue la hoja de ruta de la app.
 - [x] R-6 Integrar hilo HdR
   Enlaces al hilo de Hablemos de Relojes en la historia del creador, junto al registro de cambios y en el pie, con medición de clics por posición.
+- [x] R-23 Guía de estilo para escribir en el hilo de HdR
+  Guía sacada de las intervenciones de Tony en el hilo, con su tono, la estructura de actualizaciones, avisos y respuestas, y las peticiones que siguen abiertas.
 
 ## SEO y conversión
 
