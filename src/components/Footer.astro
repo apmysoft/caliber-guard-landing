@@ -16,10 +16,11 @@ const year = new Date().getFullYear();
       <span>© {year} Caliber Guard. Todos los derechos reservados.</span>
     </div>
 
-    <nav class="flex gap-8">
+    <nav class="flex flex-wrap justify-center gap-x-8 gap-y-3">
       <a href="/privacy/" class="hover:text-text-main transition-colors">Política de privacidad</a>
       <a href="mailto:contacto@caliberguard.com" class="hover:text-text-main transition-colors">Contacto</a>
       <a href={HDR_THREAD_URL} target="_blank" rel="noopener" data-position="footer" class="js-ga-forum-link hover:text-text-main transition-colors">Foro</a>
+      <button type="button" class="js-open-cookie-settings hover:text-text-main transition-colors">Configurar cookies</button>
     </nav>
     
     <!-- Optional Socials -->

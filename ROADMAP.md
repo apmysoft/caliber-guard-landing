@@ -41,8 +41,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Inter con negrita real y solo caracteres latinos, texto gris con contraste de 5,2:1 o más, hero visible desde el primer instante, theme-color y manifest web.
 - [x] R-15 Medir instalaciones desde la web y altas reales en la lista iOS
   Cada botón a Google Play lleva su etiqueta de origen para Play Console y Firebase, y la lista de iPhone solo confirma y cuenta las altas que MailerLite acepta.
-- [ ] R-16 Banner de cookies con rechazo igual de visible
-  Dar al botón de rechazar la misma prominencia que al de aceptar y permitir cambiar la elección más tarde, como pide la AEPD.
+- [x] R-16 Banner de cookies con rechazo igual de visible
+  Rechazar y aceptar con el mismo botón, y enlace «Configurar cookies» en el pie para cambiar la elección; al retirar el consentimiento se borran las cookies de Analytics.
 - [ ] R-17 Contenido propio: páginas por función y blog
   Crear páginas propias para las funciones clave y un blog en el dominio, en lugar de enviar todo el tráfico de artículos a otra web.
 - [x] R-18 Enlace a la web desde el hilo del foro
@@ -54,11 +54,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 ## Detalle de lo pendiente
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-16 Banner de cookies con rechazo igual de visible
-
-- «Rechazar» con el mismo estilo de botón que «Aceptar».
-- Enlace «Configurar cookies» en el pie que vuelva a mostrar el banner.
 
 ### R-17 Contenido propio: páginas por función y blog
 
