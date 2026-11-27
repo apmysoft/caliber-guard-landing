@@ -27,14 +27,14 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Favicon de 4 MB y logos por defecto de Astro sustituidos por el de Caliber Guard en pocos KB. Cada página tiene ya título, descripción, canonical e imagen para compartir.
 - [x] R-8 Quitar promesas falsas y unificar qué es gratis y qué es Premium
   Fuera el «sin tracking» y la promesa de exportar gratis; las funciones indican qué es gratis y qué Premium igual que la app. La insignia de copias cambia con R-5.
-- [ ] R-9 Datos estructurados de la app para Google
-  Describir la app, sus planes y su valoración en un formato que Google entiende, para optar a resultados enriquecidos.
+- [x] R-9 Datos estructurados de la app para Google
+  La portada describe para Google la app, la organización y los planes gratis, mensual y anual con IVA. Los precios se ven ya en las tarjetas de planes.
 - [ ] R-10 Sección de preguntas frecuentes
   Responder precio, iOS, cambio de móvil, uso sin conexión e importación desde Excel; resuelve dudas antes de descargar y atrae búsquedas concretas.
 - [ ] R-11 Hero centrado en beneficios y con prueba social
   Reescribir el subtítulo sin jerga, presentar el plan gratuito en positivo y mostrar valoración, descargas y el hilo del foro.
 - [ ] R-12 Sección de planes con precio, separada de la hoja de ruta
-  Hoy los planes están bajo «Roadmap y actualizaciones» y no se ve el precio de Premium.
+  Hoy los planes están bajo «Roadmap y actualizaciones», sin botón de descarga en cada uno.
 - [ ] R-13 Pulir textos, mayúsculas y textos alternativos
   Mayúsculas a la española, menos anglicismos, textos alternativos descriptivos, registro de cambios de lo más nuevo a lo más antiguo y otros retoques de copy.
 - [ ] R-14 Tipografías, contraste y carga del hero
@@ -55,28 +55,24 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
 
-### R-9 Datos estructurados de la app para Google
-
-- JSON-LD `MobileApplication` en `src/layouts/Layout.astro` o en la portada: `name`, `operatingSystem: ANDROID`, `applicationCategory: LifestyleApplication`, `offers` (0 € y precio Premium), `downloadUrl` de Play, `aggregateRating` cuando haya valoraciones públicas.
-- `Organization` con logo y `sameAs` (Instagram, YouTube).
-- `FAQPage` cuando exista R-10.
-- **Criterios de hecho:** sin errores en la prueba de resultados enriquecidos de Google.
-
 ### R-10 Sección de preguntas frecuentes
 
 - Preguntas: precio de Premium, versión iOS, qué pasa al cambiar de móvil (copias), uso sin conexión, importación CSV/Excel, qué datos se recogen.
-- Usar `<details>` para que sea accesible sin JavaScript. Marcar con `FAQPage` (R-9).
+- Usar `<details>` para que sea accesible sin JavaScript.
+- Añadir un nodo `FAQPage` al `@graph` de `structuredData` en `src/pages/index.astro`, con las mismas preguntas y respuestas que se ven en la página.
 
 ### R-11 Hero centrado en beneficios y con prueba social
 
 - Subtítulo propuesto: «Descubre qué relojes llevas de verdad, cuándo toca revisión y cuánto vale tu colección. Todo en tu móvil, sin crear cuenta.»
 - Debajo de los botones: «Gratis para siempre. Premium sin anuncios desde X €» (falta el precio real).
-- Prueba social: valoración y descargas de Play, y una línea como «Hecha con el feedback de la comunidad de Hablemos de Relojes» que enlace al hilo (usar `HDR_THREAD_URL` de `src/config.ts`).
+- Prueba social: valoración y descargas de Play (cuando la valoración se vea en la página, añadir `aggregateRating` al nodo `MobileApplication` de `src/pages/index.astro`; Google lo necesita para mostrar estrellas), y una línea como «Hecha con el feedback de la comunidad de Hablemos de Relojes» que enlace al hilo (usar `HDR_THREAD_URL` de `src/config.ts`).
 - Valorar un botón de descarga fijo en la cabecera para móvil.
 
 ### R-12 Sección de planes con precio, separada de la hoja de ruta
 
-- Sacar las tarjetas Básico y Premium de `src/components/Roadmap.astro` a una sección «Planes» con precio y botón en cada tarjeta.
+- Sacar las tarjetas Básico y Premium de `src/components/Roadmap.astro` a una sección «Planes» con botón en cada tarjeta. El precio ya se ve (sale de `PREMIUM_PRICES` en `src/config.ts`, que también usan los datos estructurados).
+- Destacar el ahorro del plan anual: 29,99 € frente a 47,88 € pagando 12 meses, un 37 % menos.
+- La licencia vitalicia no se anuncia en ningún sitio de la web.
 - Dejar la tarjeta «Futuro» y el registro de cambios en la hoja de ruta. Cambiar «mejoras trimestrales» por algo que case con el ritmo real.
 
 ### R-13 Pulir textos, mayúsculas y textos alternativos
