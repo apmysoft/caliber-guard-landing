@@ -4,7 +4,7 @@ Capturas de teléfono de la ficha de Caliber Guard, sacadas el 27/11/2026 de un 
 
 - Formato: JPEG de 1080×1920 (9:16). Google Play admite entre 320 y 3840 px por lado y una proporción máxima de 2:1; la captura directa del móvil (1080×2340) la supera, por eso van compuestas con un título.
 - Orden recomendado: el de los nombres de fichero. Las dos o tres primeras son las que más se ven en la ficha.
-- Dónde se suben: Play Console → Presencia en Google Play → Ficha principal de Play Store → Capturas de pantalla del teléfono.
+- Dónde se suben: Play Console → Aumentar usuarios → Presencia en Play Store → Fichas de Play Store → ficha principal → Recursos gráficos → Capturas de pantalla del teléfono.
 
 | Fichero | Título |
 | :-- | :-- |

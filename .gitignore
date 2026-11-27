@@ -31,3 +31,6 @@ landing-page-test.png
 media/
 test-landing.mjs
 .vscode/
+
+# Estadísticas exportadas de Play Console (datos internos)
+store/google-play/estadisticas/

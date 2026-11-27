@@ -55,8 +55,19 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Los artículos se publican en Completa tu Estilo, el blog del autor, y las dos webs se enlazan. Ya enlazan las guías con etiqueta de origen; faltan las piezas nuevas.
 - [x] R-21 Capturas nuevas de la app en la web
   Capturas de la versión 1.3 con la colección real en el hero, las funciones, la privacidad y la imagen para compartir, más ocho imágenes listas para Google Play.
-- [ ] R-22 Subir las capturas nuevas a la ficha de Google Play
-  Las ocho imágenes de 1080×1920 están preparadas, con su orden y sus títulos; falta subirlas desde Play Console.
+- [x] R-22 Subir las capturas nuevas a la ficha de Google Play
+  Las ocho capturas de la 1.3 ya están en la ficha. La del calendario se cambiará cuando salga la 1.3.1, que lo muestra en castellano.
+
+## Captación
+
+- [x] R-24 Diagnóstico de retención y conversión desde mayo
+  Desde marzo, 76 instalaciones nuevas, casi todas en marzo y abril, y una al mes desde junio; la base se mantiene en unos 40 móviles, pero solo 9 abren la app cada mes. El problema principal es de llegada, no de abandono.
+- [ ] R-25 Colaboración con canales de relojería en español
+  Contactar con Dando la Hora y Atrapando el Tiempo ofreciendo Premium vitalicio y un código para su audiencia, con enlaces etiquetados para medir lo que llega de cada canal.
+- [ ] R-26 Intervención en el hilo de HdR con la 1.3
+  Volver al hilo contando las novedades de la 1.3: prueba de 24 h con anuncios, copia mensual gratis y copias más fiables.
+- [ ] R-27 Ficha de Google Play que aparezca en las búsquedas
+  Revisar el título, la descripción breve y la completa de la ficha con las palabras que buscan los aficionados, para que lleguen usuarios sin depender del foro ni de los vídeos.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
@@ -84,7 +95,27 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   - enlazar desde cada página de función a su artículo (cronometría a las de revisar y medir; inventario a la de asegurar; registro de uso a la de coste por puesta).
 - **Criterios de hecho:** las cuatro piezas publicadas y enlazadas en los dos sentidos, con etiqueta de origen en ambos.
 
-### R-22 Subir las capturas nuevas a la ficha de Google Play
+### R-25 Colaboración con canales de relojería en español
 
-- **Lo hace el usuario en Play Console:** Presencia en Google Play → Ficha principal de Play Store → Capturas de pantalla del teléfono. Sustituir las actuales por las de `store/google-play/`, en el orden de los ficheros.
-- Instrucciones y títulos en `store/google-play/README.md`.
+- **Objetivo:** llegar a audiencias de aficionados ya formadas sin tener que crear comunidad propia.
+- **Pasos:**
+  1. Premium vitalicio se regala desde RevenueCat como derecho promocional, con el identificador del móvil del creador. Para sacarlo: Ajustes → pulsar 7 veces el texto «CALIBER GUARD v…» del final → Pantalla Secreta → copiar el ID. El ID es anónimo y va ligado a la instalación: si el creador reinstala o cambia de móvil, tiene que mandar el nuevo.
+  2. Personalizar el mensaje de primer contacto (dos variantes en la conversación del 27/11/2026) con algo real de cada canal, y enviarlo por el correo de contacto del canal.
+  3. Si aceptan, darles el código y un enlace etiquetado para la descripción del vídeo:
+     - Dando la Hora: `https://play.google.com/store/apps/details?id=com.apmysoft.caliber_guard&referrer=utm_source%3Ddandolahora%26utm_medium%3Dvideo%26utm_campaign%3Dcreadores`
+     - Atrapando el Tiempo: el mismo con `utm_source%3Datrapandoeltiempo`.
+  4. Una sola vez, entre una y dos semanas después, un recordatorio amable si no han respondido.
+- **Dependencias y riesgos:** la audiencia de Dando la Hora es sobre todo latinoamericana y la app solo trabaja en euros (R-21 de la app, idiomas y monedas); avisarlo en el mensaje. La cronometría por posiciones (R-19 de la app, versión 1.4) es la mejor ocasión para una segunda propuesta.
+- **Criterios de hecho:** mensajes enviados a los dos canales y respuesta (o falta de ella) apuntada aquí.
+
+### R-26 Intervención en el hilo de HdR con la 1.3
+
+- Redactar siguiendo `docs/estilo-hilo-hdr.md` y releer antes los últimos mensajes del hilo.
+- **Criterios de hecho:** mensaje publicado por el usuario y «Estado del hilo» de la guía al día.
+
+### R-27 Ficha de Google Play que aparezca en las búsquedas
+
+- **Objetivo:** el diagnóstico de R-24 muestra que fuera del foro casi no llega nadie: una o dos instalaciones al mes desde junio. La ficha no aparece en las búsquedas de Google Play.
+- **Alcance:** título (30 caracteres), descripción breve (80) y descripción completa (4000), sin cambiar la app. Palabras candidatas a validar: colección de relojes, relojes automáticos, inventario, precisión, mantenimiento, coleccionista. Ni nombres de marcas ni promesas que la app no cumpla (R-8).
+- **Entrega:** textos listos para pegar en Play Console (Aumentar usuarios → Presencia en Play Store → Fichas de Play Store) y guardados en `store/google-play/`.
+- **Criterios de hecho:** textos publicados en la ficha. Cuatro semanas después, comparar las instalaciones por búsqueda en Play Console (Adquisición de usuarios) con las de antes.
