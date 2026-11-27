@@ -1,6 +1,20 @@
 export const SITE_URL = 'https://caliberguard.com/';
 export const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.apmysoft.caliber_guard';
 
+/**
+ * Enlace a Google Play con referrer UTM, para ver en Play Console (Adquisición
+ * de usuarios) y en Firebase cuántas instalaciones llegan desde cada botón.
+ */
+export const playUrl = (position: string) => {
+  const referrer = new URLSearchParams({
+    utm_source: 'caliberguard.com',
+    utm_medium: 'web',
+    utm_campaign: 'landing',
+    utm_content: position,
+  }).toString();
+  return `${PLAY_URL}&referrer=${encodeURIComponent(referrer)}`;
+};
+
 /** Precios de Premium en Google Play, IVA incluido. La licencia vitalicia no se anuncia. */
 export const PREMIUM_PRICES = {
   monthly: '3.99',

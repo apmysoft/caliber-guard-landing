@@ -39,8 +39,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
   Textos de funciones, audiencia e historia sin jerga, textos alternativos descriptivos, registro de cambios de lo más nuevo a lo más antiguo, pie sin icono duplicado y README propio.
 - [x] R-14 Tipografías, contraste y carga del hero
   Inter con negrita real y solo caracteres latinos, texto gris con contraste de 5,2:1 o más, hero visible desde el primer instante, theme-color y manifest web.
-- [ ] R-15 Medir instalaciones desde la web y altas reales en la lista iOS
-  Etiquetar los enlaces a Google Play para saber cuántas instalaciones vienen de la web, y no contar como alta un envío fallido a MailerLite.
+- [x] R-15 Medir instalaciones desde la web y altas reales en la lista iOS
+  Cada botón a Google Play lleva su etiqueta de origen para Play Console y Firebase, y la lista de iPhone solo confirma y cuenta las altas que MailerLite acepta.
 - [ ] R-16 Banner de cookies con rechazo igual de visible
   Dar al botón de rechazar la misma prominencia que al de aceptar y permitir cambiar la elección más tarde, como pide la AEPD.
 - [ ] R-17 Contenido propio: páginas por función y blog
@@ -54,11 +54,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 ## Detalle de lo pendiente
 
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
-
-### R-15 Medir instalaciones desde la web y altas reales en la lista iOS
-
-- Enlaces a Play con `&referrer=utm_source%3Dcaliberguard.com%26utm_medium%3D<posición>`.
-- `WaitlistModal.astro` envía con `no-cors` y siempre muestra éxito: usar el endpoint JSONP de MailerLite o un Worker que devuelva el resultado real.
 
 ### R-16 Banner de cookies con rechazo igual de visible
 

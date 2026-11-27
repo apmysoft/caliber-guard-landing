@@ -126,32 +126,31 @@
     if (errorMsg) errorMsg.classList.add('hidden');
 
     const formData = new FormData(form);
-    // Add ajax flag to hopefully get JSON response, though MailerLite JSONP is tricky.
-    // We will use standard form submission via fetch.
-    formData.append('ajax', '1');
 
     try {
+      // MailerLite admite CORS y responde JSON: { success: true } o
+      // { success: false, errors: { fields: { email: ['…'] } } }.
       const response = await fetch(form.action, {
         method: 'POST',
         body: formData,
-        mode: 'no-cors' // Important for MailerLite if not using JSONP script injection
+        headers: { Accept: 'application/json' },
       });
-      
-      // With mode: 'no-cors', we get an opaque response. We can't check .ok or status.
-      // We assume success if no network error occurred. 
-      // This is a trade-off for not using the heavy jQuery/Script injection.
-      
+      const result = await response.json().catch(() => null);
+      if (!response.ok || !result?.success) {
+        throw new Error(result?.errors?.fields?.email ? 'invalid_email' : 'subscribe_failed');
+      }
+
       form.style.display = 'none';
       successMsg?.classList.remove('hidden');
-      
-      // Analytics
+
+      // Analytics: solo altas confirmadas por MailerLite
       // @ts-ignore
       if (typeof gtag !== 'undefined') {
         // @ts-ignore
         gtag('event', 'cta_ios_form_submit');
       }
-      
-      // Close after 2s
+
+      // Close after 3s
       setTimeout(() => {
         // @ts-ignore
         modal?.close();
@@ -172,7 +171,15 @@
       if (submitBtn) submitBtn.removeAttribute('disabled');
       if (loadingSpinner) loadingSpinner.classList.add('hidden');
       if (btnText) btnText.textContent = 'Notificarme';
-      if (errorMsg) errorMsg.classList.remove('hidden');
+      if (errorMsg) {
+        const text = errorMsg.querySelector('p');
+        if (text) {
+          text.textContent = err instanceof Error && err.message === 'invalid_email'
+            ? 'Ese email no parece válido. Revísalo e inténtalo de nuevo.'
+            : 'No se pudo completar el alta. Inténtalo de nuevo en unos minutos.';
+        }
+        errorMsg.classList.remove('hidden');
+      }
     }
   });
 </script>

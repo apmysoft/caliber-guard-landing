@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import appIcon from '../assets/app_icon.png';
-import { PLAY_URL } from '../config';
+import { playUrl } from '../config';
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
@@ -20,7 +20,7 @@ import { PLAY_URL } from '../config';
       </span>
     </a>
     <a
-      href={PLAY_URL}
+      href={playUrl('header')}
       data-position="header"
       class="js-ga-android-link ml-auto px-4 py-2 bg-primary hover:bg-primary-hover text-black text-sm font-bold rounded-full transition-colors"
     >

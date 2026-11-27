@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import inventoryListImg from '../assets/screens/inventory-list.jpg';
-import { PLAY_URL, HDR_THREAD_URL, PREMIUM_PRICES, PLAY_RATING, formatEUR } from '../config';
+import { playUrl, HDR_THREAD_URL, PREMIUM_PRICES, PLAY_RATING, formatEUR } from '../config';
 ---
 
 <section id="hero" class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 lg:pt-32 lg:pb-20 overflow-hidden">
@@ -20,7 +20,7 @@ import { PLAY_URL, HDR_THREAD_URL, PREMIUM_PRICES, PLAY_RATING, formatEUR } from
 
         <div class="space-y-4">
           <a
-            href={PLAY_URL}
+            href={playUrl('hero')}
             data-position="hero"
             class="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-primary-hover text-black font-bold rounded-full transition-all hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.2)] inline-flex items-center justify-center gap-2 js-ga-android-link"
           >

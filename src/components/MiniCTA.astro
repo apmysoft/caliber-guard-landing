@@ -1,4 +1,5 @@
 ---
+import { playUrl } from '../config';
 ---
 <section class="py-12 bg-surface/50 border-y border-border">
   <div class="container mx-auto px-4 text-center">
@@ -9,7 +10,7 @@
       </div>
       
       <a
-        href="https://play.google.com/store/apps/details?id=com.apmysoft.caliber_guard"
+        href={playUrl('mini_cta')}
         data-position="mini_cta"
         class="px-8 py-3 bg-primary hover:bg-primary-hover text-black font-bold rounded-full transition-all hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.2)] flex items-center gap-2 js-ga-android-link"
       >
