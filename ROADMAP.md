@@ -48,9 +48,9 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - [x] R-18 Enlace a la web desde el hilo del foro
   El hilo de Hablemos de Relojes enlaza a la web con etiqueta de origen, así que Analytics muestra las visitas que llegan desde el foro.
 - [ ] R-19 Actividad del hilo y opiniones de foreros en la web
-  Mostrar cuántas respuestas tiene el hilo y cuándo se actualizó, y citar comentarios del foro como testimonios, con permiso de sus autores.
-- [ ] R-20 Blog propio en el dominio
-  Artículos de relojería ligados a la app en caliberguard.com/blog, y decidir qué hacer con los enlaces a Completa tu Estilo.
+  En pausa. Mostrar cuántas respuestas tiene el hilo y cuándo se actualizó, y citar comentarios del foro como testimonios, con permiso de sus autores.
+- [ ] R-20 Sinergia con el blog Completa tu Estilo
+  Los artículos se publican en Completa tu Estilo, el blog del autor, y las dos webs se enlazan. Ya enlazan las guías con etiqueta de origen; faltan las piezas nuevas.
 <!-- /nexus:indice -->
 
 ## Detalle de lo pendiente
@@ -62,15 +62,18 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Objetivo:** reforzar la prueba social con actividad real del foro.
 - **Actividad:** HdR usa Discourse, que publica cada hilo en JSON (`/t/273999.json`). Leerlo al compilar para mostrar «X respuestas · actualizado hace N días» junto al enlace de la historia. Si la petición falla, el build tiene que seguir y mostrar solo el enlace.
 - **Testimonios:** dos o tres comentarios del hilo con su nombre de usuario, cada uno con permiso de su autor. Valorar si encajan en la historia o en el hero (R-11).
-- **Antes de empezar:** comprobar con el evento `click_forum_hdr` de Analytics que la gente pulsa los enlaces.
+- **En pausa por decisión del usuario (27/11/2026).**
+- **Punto de partida:** según el foro, el enlace a la web del hilo tenía 119 pulsaciones antes de cambiarlo por el etiquetado (R-18). Comparar con las visitas de `utm_source=hablemosderelojes` y los clics `click_forum_hdr` antes de retomarla.
 - **Criterios de hecho:** los datos se ven en la web, el build no se rompe sin conexión con el foro y hay permiso guardado de cada testimonio.
 
-### R-20 Blog propio en el dominio
+### R-20 Sinergia con el blog Completa tu Estilo
 
-- **Objetivo:** atraer búsquedas informativas de relojería a caliberguard.com y llevarlas a la app, en lugar de mandar a los lectores a otra web.
-- **Decisiones del usuario antes de empezar:**
-  - Qué hacer con la sección «Aprende sobre relojes», que enlaza a completatuestilo.com: mantenerla, quitarla o sustituirla por los artículos propios.
-  - Quién firma los artículos (Tony, en primera persona como en la historia) y si se escriben a partir de borradores suyos.
-- **Temas propuestos:** cada cuánto revisar un reloj automático; cómo medir la marcha (enlazar con la página de cronometría); cómo asegurar una colección de relojes (enlazar con la de inventario); coste por puesta y rotación de la colección.
-- **Notas técnicas:** colección de contenido de Astro en `src/content/blog/`, rutas `/blog/` y `/blog/<slug>/`, datos estructurados `BlogPosting`, aparición en el sitemap y enlace en el pie.
-- **Criterios de hecho:** al menos tres artículos publicados, enlazados entre sí y con las páginas de funciones.
+- **Decisión del usuario (27/11/2026):** no habrá blog en caliberguard.com. Completa tu Estilo (completatuestilo.com) es el blog del autor, y las dos webs deben reforzarse entre sí.
+- **Hecho:** la sección «Aprende sobre relojes» enlaza a la URL definitiva de cada guía, sin pasar por la redirección 301, con `utm_source=caliberguard.com&utm_medium=referral&utm_campaign=landing&utm_content=articulos`, y presenta el blog como «mi blog de relojería».
+- **Hecho en la hoja de ruta del blog** (`../completa-tu-estilo/docs/ROADMAP.md`, sección «Sinergia con Caliber Guard»):
+  - actualizar su banner de Caliber Guard con los textos actuales y etiqueta de origen (tarea 25);
+  - cuatro piezas que enlazan con las páginas de funciones: revisar un automático, medir la precisión en casa, asegurar la colección y coste por puesta.
+- **Pendiente aquí:** cuando se publique cada pieza,
+  - sustituir o completar las tarjetas de «Aprende sobre relojes» con las piezas nuevas;
+  - enlazar desde cada página de función a su artículo (cronometría a las de revisar y medir; inventario a la de asegurar; registro de uso a la de coste por puesta).
+- **Criterios de hecho:** las cuatro piezas publicadas y enlazadas en los dos sentidos, con etiqueta de origen en ambos.
