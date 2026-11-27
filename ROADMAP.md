@@ -63,9 +63,9 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - [x] R-24 Diagnóstico de retención y conversión desde mayo
   Desde marzo, 76 instalaciones nuevas, casi todas en marzo y abril, y una al mes desde junio; la base se mantiene en unos 40 móviles, pero solo 9 abren la app cada mes. El problema principal es de llegada, no de abandono.
 - [ ] R-25 Colaboración con canales de relojería en español
-  Contactar con Dando la Hora y Atrapando el Tiempo ofreciendo Premium vitalicio y un código para su audiencia, con enlaces etiquetados para medir lo que llega de cada canal.
-- [ ] R-26 Intervención en el hilo de HdR con la 1.3
-  Volver al hilo contando las novedades de la 1.3: prueba de 24 h con anuncios, copia mensual gratis y copias más fiables.
+  Contactar con Dando la Hora y Atrapando el Tiempo ofreciendo Premium vitalicio y un mes de Premium para su audiencia, con enlaces etiquetados para medir lo que llega de cada canal.
+- [x] R-26 Intervención en el hilo de HdR con la 1.3
+  Publicada en el mensaje 62 del hilo el 27/11/2026: copia mensual gratis, aviso de copia, prueba de 24 h y copias más fiables, con la 1.4 de la cronometría como lo siguiente.
 - [ ] R-27 Ficha de Google Play que aparezca en las búsquedas
   Revisar el título, la descripción breve y la completa de la ficha con las palabras que buscan los aficionados, para que lleguen usuarios sin depender del foro ni de los vídeos.
 <!-- /nexus:indice -->
@@ -101,17 +101,12 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 - **Pasos:**
   1. Premium vitalicio se regala desde RevenueCat como derecho promocional, con el identificador del móvil del creador. Para sacarlo: Ajustes → pulsar 7 veces el texto «CALIBER GUARD v…» del final → Pantalla Secreta → copiar el ID. El ID es anónimo y va ligado a la instalación: si el creador reinstala o cambia de móvil, tiene que mandar el nuevo.
   2. Personalizar el mensaje de primer contacto (dos variantes en la conversación del 27/11/2026) con algo real de cada canal, y enviarlo por el correo de contacto del canal.
-  3. Si aceptan, darles el código y un enlace etiquetado para la descripción del vídeo:
+  3. Si aceptan, darles un código de un mes de Premium para su audiencia, como el que se regaló en el foro, y un enlace etiquetado para la descripción del vídeo:
      - Dando la Hora: `https://play.google.com/store/apps/details?id=com.apmysoft.caliber_guard&referrer=utm_source%3Ddandolahora%26utm_medium%3Dvideo%26utm_campaign%3Dcreadores`
      - Atrapando el Tiempo: el mismo con `utm_source%3Datrapandoeltiempo`.
   4. Una sola vez, entre una y dos semanas después, un recordatorio amable si no han respondido.
 - **Dependencias y riesgos:** la audiencia de Dando la Hora es sobre todo latinoamericana y la app solo trabaja en euros (R-21 de la app, idiomas y monedas); avisarlo en el mensaje. La cronometría por posiciones (R-19 de la app, versión 1.4) es la mejor ocasión para una segunda propuesta.
 - **Criterios de hecho:** mensajes enviados a los dos canales y respuesta (o falta de ella) apuntada aquí.
-
-### R-26 Intervención en el hilo de HdR con la 1.3
-
-- Redactar siguiendo `docs/estilo-hilo-hdr.md` y releer antes los últimos mensajes del hilo.
-- **Criterios de hecho:** mensaje publicado por el usuario y «Estado del hilo» de la guía al día.
 
 ### R-27 Ficha de Google Play que aparezca en las búsquedas
 
