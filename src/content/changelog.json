@@ -36,6 +36,11 @@
     },
     {
         "version": "v1.3",
+        "date": "27 Nov 2026",
+        "description": "Prueba gratuita de 24 h de la analítica y el buscador viendo anuncios. Copia de seguridad mensual con fotos para usuarios gratuitos y aviso cuando toca hacer copia. Copias y restauraciones más fiables, sin pérdida de fotos."
+    },
+    {
+        "version": "v1.4",
         "date": "(Próximamente)",
         "description": "Rediseño de la función de Cronometría."
     }

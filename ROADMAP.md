@@ -16,8 +16,8 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 - [x] R-4 Registro de cambios al día con la app publicada
   Añadida la 1.3 (prueba de 24 h con anuncios, copia mensual gratuita y copias más fiables); el rediseño de la cronometría pasa a la 1.4.
-- [ ] R-5 Actualizar las tarjetas de planes con las novedades de la 1.3
-  El plan básico aún dice solo «Backups: seguridad local»; falta contar la copia mensual con fotos y la prueba de 24 h de la analítica y el buscador viendo anuncios.
+- [x] R-5 Actualizar las tarjetas de planes con las novedades de la 1.3
+  Las tarjetas y la insignia de copias cuentan la copia mensual gratis y la prueba de 24 h; Premium, las copias ilimitadas; y «Próximamente» sigue la hoja de ruta de la app.
 - [x] R-6 Integrar hilo HdR
   Enlaces al hilo de Hablemos de Relojes en la historia del creador, junto al registro de cambios y en el pie, con medición de clics por posición.
 
@@ -53,14 +53,6 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 ## Detalle de lo pendiente
 
-### R-5 Actualizar las tarjetas de planes con las novedades de la 1.3
-
-- **Objetivo:** que la comparativa de planes refleje lo que ofrece la versión gratuita desde la 1.3.
-- **Alcance:** tarjeta «Plan Básico» de `src/components/Roadmap.astro`; revisar también la tarjeta Premium (copias ilimitadas, sin anuncios) y la de «Futuro (v2.0)» frente a la hoja de ruta de la app.
-- **También:** la insignia «Premium: Copia de seguridad y Restauración» de `src/components/Privacy.astro` pasa a «Gratis: una copia al mes» y «Premium: copias ilimitadas», porque desde la 1.3 restaurar es libre y hay una copia mensual gratuita.
-- **Criterios de hecho:** textos coherentes con la versión publicada en Play y `npm run build` sin errores.
-- **Dependencias:** publicar antes la 1.3 en Google Play (R-16 de la hoja de ruta de la app).
-
 > Las tareas R-7 a R-17 salen de la auditoría SEO y de copywriting del 27/11/2026.
 
 ### R-9 Datos estructurados de la app para Google
@@ -86,11 +78,9 @@ Web pública de Caliber Guard, la app Android para coleccionistas de relojes. Es
 
 - Sacar las tarjetas Básico y Premium de `src/components/Roadmap.astro` a una sección «Planes» con precio y botón en cada tarjeta.
 - Dejar la tarjeta «Futuro» y el registro de cambios en la hoja de ruta. Cambiar «mejoras trimestrales» por algo que case con el ritmo real.
-- En la tarjeta de futuro, cambiar los nombres internos por beneficios: «Amazon API Real» por «Precios y fotos automáticos» e «IA Scanner» por «Reconoce tu reloj con una foto».
 
 ### R-13 Pulir textos, mayúsculas y textos alternativos
 
-- Mayúsculas a la española en las tarjetas de planes («Inventario ilimitado», «Coste por puesta»).
 - Funciones: cambiar «fichas tácticas», «ROI» y «Entiende tu pasión» por beneficios concretos.
 - Audiencia: «Colección 10+» excluye a quien empieza.
 - Historia: firma del autor, «Excel» con mayúscula, «registrar» en vez de «trackear».
